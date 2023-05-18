@@ -1,0 +1,86 @@
+.projects-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.stack-wrapper {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+
+.project-card {
+  background-color: $colorBtn;
+  width: 34%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    scale: 1.02;
+  }
+
+  span {
+    margin-left: 12px;
+    color: $textSecondary;
+    font-size: 12px;
+  }
+}
+
+.stack-pill {
+  border-radius: 12px;
+  color: $colorWhite;
+  padding: 3px 10px;
+  font-size: 0.7em;
+}
+
+.project-image {
+  height: 200px;
+}
+
+.project-card-content {
+  padding: 12px;
+  flex-grow: 1;
+
+  h2 {
+    font-weight: 600;
+  }
+}
+
+// Colors
+.bg-blue {
+  background-color: #3f5aa8;
+}
+
+.bg-react-blue {
+  background-color: #6ccef0;
+}
+
+.bg-yellow {
+  background-color: #d5ba33;
+}
+
+.bg-orange {
+  background-color: #e34d27;
+}
+
+.bg-violet {
+  background-color: #cd6799;
+}
+
+.bg-python {
+  background-color: #4584b6;
+}
+
+.bg-linkedin-blue {
+  background-color: #0a66c2;
+}
+
+.bg-black {
+  background-color: black;
+  color: whitesmoke;
+}

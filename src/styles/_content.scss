@@ -1,0 +1,24 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+  color: black;
+  border-right: 4px solid $colorPrimary;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 400;
+    margin-bottom: 0.5em;
+  }
+
+  h1 {
+    color: $colorPrimary;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+}
