@@ -8,6 +8,14 @@ function Popup(props) {
 
   const currentProject = projects[popupContentId];
 
+  const renderGoal = currentProject.goal.map((line) => {
+    return <p>{line}</p>;
+  });
+
+  const renderSolution = currentProject.solution.map((line) => {
+    return <p>{line}</p>;
+  });
+
   return (
     <div
       className="overlay"
@@ -29,9 +37,9 @@ function Popup(props) {
         </div>
         <div className="popup-content">
           <h2>Задача</h2>
-          <p>{currentProject.goal}</p>
+          <p>{renderGoal}</p>
           <h2>Решение</h2>
-          <p>{currentProject.solution}</p>
+          <p>{renderSolution}</p>
         </div>
       </div>
     </div>

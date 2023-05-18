@@ -37,19 +37,19 @@ export const skills = {
 export const certifications = [
   {
     id: 0,
-    logo: "/images/misis-logo.png",
-    name: "Московский Университет Стали и Сплавов",
+    logo: "misis-logo.png",
+    name: "Московский Институт Стали и Сплавов (МИСиС)",
     specialization: "Автоматизация технологических процессов и производств",
     graduationDate: "16.06.2010",
-    url: "/certificates/misis.pdf",
+    url: "misis.pdf",
   },
   {
     id: 1,
-    logo: "/images/scrimba-logo.png",
+    logo: "scrimba-logo.png",
     name: "Scrimba.com",
     specialization: "The Front-End Developer Career Path",
     graduationDate: "08.09.2022",
-    url: "/certificates/scrimba.pdf",
+    url: "scrimba.pdf",
   },
 ];
 
@@ -73,7 +73,7 @@ export const links = [
 export const projects = [
   {
     id: 0,
-    image: "/images/projects/ITInfo.png",
+    image: "ITInfo.png",
     name: "IT Info Portal",
     desc: "Проект по сбору, анализу и удобномуотображению корпоративной информации об оборудовании и сетях на моей прошлой должности IT координатора инфраструктуры.",
     stack: [
@@ -85,13 +85,21 @@ export const projects = [
       { id: 5, name: "MS SQL", color: "bg-orange" },
       { id: 6, name: "Python", color: "bg-python" },
     ],
-    goal: "Goal 1",
-    solution: "Solution 1",
+    goal: [
+      "На работе была задача оперативно мониторить текущее состояние и местонахождение оборудования (компьютеры, принтеры, сетевое оборудование), привязывать его к пользователям Active Directory.",
+      "Отдельно для пользователей необходимо поддерживать в актуальном состояниии телефонную книгу.",
+    ],
+    solution: [
+      "- (Python) Сбор данных скриптом по расписанию на Windows Server из Active Directory, SCCM и, прости господи, 1С, после чего данные складываются на сервер в виде CSV файла.",
+      "- (C# Backend) Несколько раз в день по расписанию данные обновляются из выгруженных CSV в БД MS SQL.",
+      "- (jQuery) Портал построен с помощью jQuery и фреймворка DevExtreme.",
+      "- (C# Backend) Авторизация настроена по пользователям из домена Acive Directory, от отдельными таблицами по специальным правам доступа.",
+    ],
     gitUrl: null,
   },
   {
     id: 1,
-    image: "/images/cadence.png",
+    image: "cadence.png",
     name: "Cadence Assistant",
     desc: "Небольшой инструмент, помогающий поддерживать заданный ритм при кардиотренировках.",
     stack: [
@@ -101,13 +109,19 @@ export const projects = [
       { id: 3, name: "React", color: "bg-react-blue" },
       { id: 4, name: "GitHub", color: "bg-black" },
     ],
-    goal: "Достаточно сложно крутить велотренажёр в заданном ритме, особенно если на фоне хочется посмотреть сериальчик :) Потому я подумал, что было бы неплохо иметь ритм-машину, не зависящую от играющей музыки, также имеющую хотя бы минимальный мониторинг прогресса тренировки.",
-    solution: "В этом проекте/nя научился",
+    goal: [
+      "Достаточно сложно крутить велотренажёр в заданном ритме, особенно если на фоне хочется посмотреть сериальчик :) Потому я подумал, что было бы неплохо иметь ритм-машину, не зависящую от играющей музыки, также имеющую хотя бы минимальный мониторинг прогресса тренировки.",
+    ],
+    solution: [
+      "- Стандартный метроном с настройкой времени тренировки. Настройки ритма и громкости доступны во время работы.",
+      "- Функционал паузы, продолжения и сброса тренировки.",
+      "- Во время тренировки отображается Progress Bar, оформленный под стандартные интерфейсы спортивных тренажёров.",
+    ],
     gitUrl: "https://github.com/Lexeor/cadence-assistant",
   },
   {
     id: 2,
-    image: "/images/projects/ntb-extension.png",
+    image: "ntb-extension.png",
     name: "New tab Chrome browser extension",
     desc: "Расширение к Chrome с прямым поиском в YouTube и Google, настраиваемым избранным, а также небольшим виджетом погоды.",
     stack: [
@@ -117,8 +131,15 @@ export const projects = [
       { id: 3, name: "React", color: "bg-react-blue" },
       { id: 4, name: "GitHub", color: "bg-black" },
     ],
-    goal: "Goal 3",
-    solution: "Solution 3",
+    goal: [
+      "Стандартная заглушка у новой старницы в Chrome, конечно, замечательная, но за столько лет уже поднадоела, потому и пришла идея сделать её более кастомизированной, а заодно потренироваться в заборе данных со стороннего API. Ну и, конечно же, прямой поиск на YouTube сэкономит целый клик! А с количеством кликов, которые мы делаем в день - это целая жизнь :)",
+    ],
+    solution: [
+      "- Строка поиска с переключателем поисковика YouTube/Google.",
+      "- Виджет по добавлению избранного с возможностью сохранять данные пользователя как в local.storage (при разработке), так и в chrome.storage (в рабочем билде).",
+      "- Виджет отображения погоды с данными из OpenWeather API.",
+      "- Меню настроек с возможностью отключения любого из виджетов (также сохраняются в local.storage/chrome.storage в зависимости от среды).",
+    ],
     gitUrl: "https://github.com/Lexeor/ntb-extension",
   },
 ];

@@ -55,3 +55,9 @@ h4 {
 @import "./card";
 @import "./projectItem";
 @import "./popup";
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}

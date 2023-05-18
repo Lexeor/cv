@@ -46,3 +46,30 @@
     padding: 0;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .info-bar {
+    flex-direction: row;
+    height: 170px;
+    width: 100%;
+    min-height: auto;
+
+    p {
+      display: none;
+    }
+
+    .img-area {
+      width: 150px;
+      height: 150px;
+      margin: 0;
+    }
+
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+
+  .info-bar-column {
+    flex-grow: 1;
+  }
+}
