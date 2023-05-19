@@ -95,9 +95,9 @@ export const links = [
 export const projects = [
   {
     id: 0,
-    image: "itinfo_1.png",
+    images: ["itinfo_1.png", "itinfo_2.png", "itinfo_3.png", "itinfo_4.png"],
     name: "IT Info Portal",
-    desc: "Проект по сбору, анализу и удобномуотображению корпоративной информации об оборудовании и сетях на моей прошлой должности IT координатора инфраструктуры.",
+    desc: "Проект по сбору, анализу и удобному отображению корпоративной информации об оборудовании и сетях на моей прошлой должности IT координатора инфраструктуры.",
     stack: [
       { id: 0, name: "HTML", color: "bg-yellow" },
       { id: 1, name: "CSS", color: "bg-blue" },
@@ -122,7 +122,7 @@ export const projects = [
   },
   {
     id: 1,
-    image: "cadence.png",
+    images: ["/cadence_1.png", "/cadence_2.gif"],
     name: "Cadence Assistant",
     desc: "Небольшой инструмент, помогающий поддерживать заданный ритм при кардиотренировках.",
     stack: [
@@ -142,30 +142,31 @@ export const projects = [
     ],
     gitUrl: "https://github.com/Lexeor/cadence-assistant",
   },
-  {
-    id: 2,
-    image: "ntb-extension.png",
-    name: "New tab Chrome browser extension",
-    desc: "Расширение к Chrome с прямым поиском в YouTube и Google, настраиваемым избранным, а также небольшим виджетом погоды.",
-    stack: [
-      { id: 0, name: "HTML", color: "bg-yellow" },
-      { id: 1, name: "CSS", color: "bg-blue" },
-      { id: 2, name: "JavaScript", color: "bg-yellow" },
-      { id: 3, name: "React", color: "bg-react-blue" },
-      { id: 4, name: "GitHub", color: "bg-black" },
-    ],
-    goal: [
-      "Стандартная заглушка у новой старницы в Chrome, конечно, замечательная, но за столько лет уже поднадоела, потому и пришла идея сделать её более кастомизированной, а заодно потренироваться в заборе данных со стороннего API. Ну и, конечно же, прямой поиск на YouTube сэкономит целый клик! А с количеством кликов, которые мы делаем в день - это целая жизнь :)",
-    ],
-    solution: [
-      "- Строка поиска с переключателем поисковика YouTube/Google.",
-      "- Виджет по добавлению избранного с возможностью сохранять данные пользователя как в local.storage (при разработке), так и в chrome.storage (в рабочем билде).",
-      "- Виджет отображения погоды с данными из OpenWeather API.",
-      "- Меню настроек с возможностью отключения любого из виджетов (также сохраняются в local.storage/chrome.storage в зависимости от среды).",
-    ],
-    gitUrl: "https://github.com/Lexeor/ntb-extension",
-  },
 ];
+
+const notCompilingProject = {
+  id: 2,
+  images: ["/ntb-extension.png"],
+  name: "New tab Chrome extension",
+  desc: "Расширение к Chrome с прямым поиском в YouTube и Google, настраиваемым избранным, а также небольшим виджетом погоды.",
+  stack: [
+    { id: 0, name: "HTML", color: "bg-yellow" },
+    { id: 1, name: "CSS", color: "bg-blue" },
+    { id: 2, name: "JavaScript", color: "bg-yellow" },
+    { id: 3, name: "React", color: "bg-react-blue" },
+    { id: 4, name: "GitHub", color: "bg-black" },
+  ],
+  goal: [
+    "Стандартная заглушка у новой старницы в Chrome, конечно, замечательная, но за столько лет уже поднадоела, потому и пришла идея сделать её более кастомизированной, а заодно потренироваться в заборе данных со стороннего API. Ну и, конечно же, прямой поиск на YouTube сэкономит целый клик! А с количеством кликов, которые мы делаем в день - это целая жизнь :)",
+  ],
+  solution: [
+    "- Строка поиска с переключателем поисковика YouTube/Google.",
+    "- Виджет по добавлению избранного с возможностью сохранять данные пользователя как в local.storage (при разработке), так и в chrome.storage (в рабочем билде).",
+    "- Виджет отображения погоды с данными из OpenWeather API.",
+    "- Меню настроек с возможностью отключения любого из виджетов (также сохраняются в local.storage/chrome.storage в зависимости от среды).",
+  ],
+  gitUrl: "https://github.com/Lexeor/ntb-extension",
+};
 
 export const references = [
   {

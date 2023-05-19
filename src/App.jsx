@@ -1,19 +1,27 @@
+import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import InfoBar from "./components/InfoBar";
-import Content from "./components/Content";
-import { PopupContextProvider } from "./components/contexts/PopupContext";
-import Popup from "./components/popup/Popup";
+import Home from "./components/pages/Home";
+import Project from "./components/pages/Project";
 
 function App() {
+  const [projectId, setProjectId] = useState(0);
+
   return (
-    <div className="App inactive">
-      <div className="container">
-        <InfoBar />
-        <PopupContextProvider>
-          <Popup />
-          <Content />
-        </PopupContextProvider>
+    <BrowserRouter>
+      <div className="App">
+        <div className="container">
+          <InfoBar />
+          <Routes>
+            <Route index element={<Home setProjectId={setProjectId} />} />
+            <Route
+              path="/project"
+              element={<Project projectId={projectId} />}
+            />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
