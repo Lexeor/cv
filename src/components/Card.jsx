@@ -16,7 +16,7 @@ function Card(props) {
         {props.item.icon ? (
           <i className={buildClass()}></i>
         ) : (
-          <img src={`${props.item.svg}.svg`} alt="icon" />
+          <img src={`icons/${props.item.svg}.svg`} alt="icon" />
         )}
 
         <span>{props.item.name}</span>
@@ -27,7 +27,7 @@ function Card(props) {
       {props.item.icon ? (
         <i className={buildClass()}></i>
       ) : (
-        <img src={`${props.item.svg}.svg`} alt="icon" />
+        <img src={`icons/${props.item.svg}.svg`} alt="icon" />
       )}
       <span>{props.item.name}</span>
     </div>
