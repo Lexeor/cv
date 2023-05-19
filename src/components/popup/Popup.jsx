@@ -8,12 +8,12 @@ function Popup(props) {
 
   const currentProject = projects[popupContentId];
 
-  const renderGoal = currentProject.goal.map((line) => {
-    return <p>{line}</p>;
+  const renderGoal = currentProject.goal.map((line, index) => {
+    return <p key={index}>{line}</p>;
   });
 
-  const renderSolution = currentProject.solution.map((line) => {
-    return <p>{line}</p>;
+  const renderSolution = currentProject.solution.map((line, index) => {
+    return <p key={index}>{line}</p>;
   });
 
   return (
@@ -28,18 +28,18 @@ function Popup(props) {
         <i className="ri-close-line close" onClick={() => togglePopup()}></i>
         <div className="popup-sidebar">
           <div className="popup-image">
-            <img src={currentProject.image} />
+            <img src={currentProject.image} alt="Project" />
           </div>
           <div className="popup-details">
             <h3>{currentProject.name}</h3>
-            <p>{currentProject.gitUrl}</p>
+            <div>{currentProject.gitUrl}</div>
           </div>
         </div>
         <div className="popup-content">
           <h2>Задача</h2>
-          <p>{renderGoal}</p>
+          <div>{renderGoal}</div>
           <h2>Решение</h2>
-          <p>{renderSolution}</p>
+          <div>{renderSolution}</div>
         </div>
       </div>
     </div>

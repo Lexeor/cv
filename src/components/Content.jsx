@@ -2,7 +2,14 @@ import React from "react";
 import Card from "./Card";
 import CertCard from "./CertCard";
 import ProjectCard from "./ProjectCard";
-import { skills, certifications, links, projects } from "../data/data";
+import RecommendationCard from "./RecommendationCard";
+import {
+  skills,
+  certifications,
+  links,
+  projects,
+  references,
+} from "../data/data";
 
 function Content() {
   const primarySkillsRender = skills.primary.map((item) => {
@@ -25,15 +32,22 @@ function Content() {
     return <ProjectCard key={item.id} item={item} />;
   });
 
+  const recommendationsRender = references.map((item) => {
+    return <RecommendationCard key={item.id} item={item} />;
+  });
+
   return (
     <div className="content">
       <section>
-        <h1>Описание</h1>
+        <h1>Привет!</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex totam
-          alias accusamus incidunt omnis nihil eligendi, unde, minus porro
-          facilis eum dolore fugit quaerat corporis eaque ullam aut, voluptatem
-          velit!
+          Меня зовут Саша и мне всегда нравилось автоматизировать свою работу,
+          разрабатывая скрипты и веб-приложения. В один момент я подумал, почему
+          бы не сделать это своей профессией, и вот мы здесь :)
+        </p>
+        <p>
+          Программированием я увлекаюсь с детства, но серьезно применять его в
+          своей работе начал лет 5 назад и не планирую останавливаться!
         </p>
       </section>
       <section>
@@ -55,6 +69,10 @@ function Content() {
       <section>
         <h1>Ссылки</h1>
         <div className="cards-wrapper">{linksRender}</div>
+      </section>
+      <section>
+        <h1>Рекомендации</h1>
+        <div className="cards-wrapper">{recommendationsRender}</div>
       </section>
     </div>
   );

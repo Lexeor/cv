@@ -2,15 +2,22 @@ export const skills = {
   primary: [
     {
       id: 0,
+      name: "Googling",
+      icon: null,
+      svg: "google",
+      color: null,
+    },
+    {
+      id: 1,
       name: "JavaScript",
       icon: "fa-brands fa-square-js",
       color: "yellow",
     },
-    { id: 1, name: "HTML", icon: "fa-brands fa-html5", color: "yellow" },
-    { id: 2, name: "CSS", icon: "fa-brands fa-css3", color: "blue" },
-    { id: 3, name: "SCSS", icon: "fa-brands fa-sass", color: "violet" },
-    { id: 4, name: "React", icon: "fa-brands fa-react", color: "react-blue" },
-    { id: 5, name: "git", icon: "fa-brands fa-github", color: "black" },
+    { id: 2, name: "HTML", icon: "fa-brands fa-html5", color: "yellow" },
+    { id: 3, name: "CSS", icon: "fa-brands fa-css3", color: "blue" },
+    { id: 4, name: "SCSS", icon: "fa-brands fa-sass", color: "violet" },
+    { id: 5, name: "React", icon: "fa-brands fa-react", color: "react-blue" },
+    { id: 6, name: "git", icon: "fa-brands fa-github", color: "black" },
   ],
   secondary: [
     {
@@ -40,7 +47,7 @@ export const skills = {
       color: null,
     },
     {
-      id: 3,
+      id: 4,
       name: "Illustrator",
       icon: null,
       svg: "illustrator",
@@ -156,5 +163,29 @@ export const projects = [
       "- Меню настроек с возможностью отключения любого из виджетов (также сохраняются в local.storage/chrome.storage в зависимости от среды).",
     ],
     gitUrl: "https://github.com/Lexeor/ntb-extension",
+  },
+];
+
+export const references = [
+  {
+    id: 0,
+    name: "Игорь Баклашов",
+    position: "Директор по ИТ",
+    company: "Sandvik Mining and Construction CIS",
+    email: "igor.baklashov@sandvik.com",
+  },
+  {
+    id: 1,
+    name: "Frank Siebenmorgen",
+    position: "IT Manager",
+    company: "Sandvik AB, Sweden",
+    email: "frank.siebenmorgen@sandvik.com",
+  },
+  {
+    id: 2,
+    name: "Иван Фуров",
+    position: "Senior Software Developer",
+    company: "Yandex",
+    email: "ifurov@yandex.ru",
   },
 ];

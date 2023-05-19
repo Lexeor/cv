@@ -11,7 +11,12 @@ function CertCard(props) {
           <span>Дата окончания: {props.item.graduationDate}</span>
         </div>
       </div>
-      <a href={props.item.url} target="_blank" className="download-icon">
+      <a
+        href={props.item.url}
+        target="_blank"
+        rel="noreferrer"
+        className="download-icon"
+      >
         <span>Download</span>
         <i className="fa-solid fa-file-pdf"></i>
       </a>

@@ -6,7 +6,12 @@ function Card(props) {
   };
 
   const finalCard = props.item.url ? (
-    <a href={props.item.url} target="_blank" className="card-link">
+    <a
+      href={props.item.url}
+      target="_blank"
+      rel="noreferrer"
+      className="card-link"
+    >
       <div className="skill-card">
         {props.item.icon ? (
           <i className={buildClass()}></i>

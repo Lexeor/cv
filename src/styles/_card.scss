@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 0.2em;
   align-items: center;
   min-width: 80px;
   min-height: 80px;
@@ -87,11 +88,6 @@
   background-color: $colorBtn;
   border-radius: 8px;
   overflow: hidden;
-
-  i {
-    font-size: 32px;
-    padding: 1em;
-  }
 }
 
 .cert-card-row {
@@ -128,18 +124,24 @@
 .download-icon {
   all: unset;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 1em;
 
   &:hover {
     cursor: pointer;
     background-color: $colorBtnHover;
   }
 
+  i {
+    font-size: 32px;
+    padding: 0.5em;
+  }
+
   span {
     color: $colorRed;
     font-weight: 500;
+    padding: 0.5em 0.5em 0 0.5em;
   }
 }
 
@@ -157,6 +159,47 @@
   }
 
   .download-icon {
+    flex-direction: row;
     padding: 0;
+  }
+}
+
+.ref-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: $colorBtn;
+  border-radius: 8px;
+  padding: 10px;
+  transition: ease-in-out 0.2s;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+  .ref-card-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+
+    .ref-name {
+      font-weight: 600;
+    }
+
+    .ref-company {
+      color: $textSecondary;
+    }
+  }
+
+  .ref-mailto {
+    all: unset;
+    padding: 0.3em;
+    font-size: 24px;
+    color: $colorPrimary;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
