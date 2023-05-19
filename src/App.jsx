@@ -1,14 +1,16 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import InfoBar from "./components/InfoBar";
 import Home from "./components/pages/Home";
 import Project from "./components/pages/Project";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [projectId, setProjectId] = useState(0);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
+      <ScrollToTop />
       <div className="App">
         <div className="container">
           <InfoBar />
@@ -21,7 +23,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

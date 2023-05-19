@@ -12,7 +12,7 @@ function ProjectCard(props) {
 
   return (
     <div className="project-card" onClick={clickHandler}>
-      <Link to="/project" style={{ all: "unset" }}>
+      <Link to="/project">
         <div className="project-image">
           <img src={props.item.images[0]} alt="Project Thumbnail" />
         </div>
@@ -20,6 +20,7 @@ function ProjectCard(props) {
           <h2>{props.item.name}</h2>
           <p>{props.item.desc}</p>
         </div>
+        <div className="filler"></div>
         <span>Использованный стек:</span>
         <div className="stack-wrapper">{stackRender}</div>
       </Link>

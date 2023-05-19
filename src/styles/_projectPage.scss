@@ -19,6 +19,7 @@
   color: $colorBlack;
   position: relative;
   overflow: hidden;
+  border-right: 4px solid $colorPrimary;
 
   h1 {
     font-size: 1.5em;
@@ -35,6 +36,40 @@
   margin: 0 auto;
 }
 
+.project-content {
+  .stack-wrapper {
+    border: 0;
+    margin-bottom: 1em;
+  }
+}
+
+.project-details {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.git-button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  background-color: $colorBlack;
+  border-radius: 25px;
+  color: $text;
+  padding: 0.5em;
+  cursor: pointer;
+  margin-bottom: 0.8em;
+
+  i {
+    font-size: 24px;
+  }
+}
+
+.green {
+  background-color: green;
+}
+
 @media only screen and (max-width: 900px) {
   .proj-image-area {
     width: 80%;
@@ -44,5 +79,11 @@
 @media only screen and (max-width: 700px) {
   .proj-image-area {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-main {
+    border: 0;
   }
 }
