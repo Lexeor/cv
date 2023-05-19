@@ -95,7 +95,7 @@ export const links = [
 export const projects = [
   {
     id: 0,
-    image: "ITInfo.png",
+    image: "itinfo_1.png",
     name: "IT Info Portal",
     desc: "Проект по сбору, анализу и удобномуотображению корпоративной информации об оборудовании и сетях на моей прошлой должности IT координатора инфраструктуры.",
     stack: [
@@ -110,6 +110,7 @@ export const projects = [
     goal: [
       "Компании было необходимо оперативно мониторить текущее состояние и местонахождение оборудования (компьютеры, принтеры, сетевое оборудование), привязывать его к пользователям Active Directory.",
       "Отдельно для пользователей необходимо поддерживать в актуальном состояниии телефонную книгу.",
+      "Для сотрудников IT создать интерфейс для учёта рабочего времени, который потом в заданном формате раз в месяц загружать в общую корпоративную систему.",
     ],
     solution: [
       "- (Python) Сбор данных скриптом по расписанию на Windows Server из Active Directory, SCCM и, прости господи, 1С, после чего данные складываются на сервер в виде CSV файла.",
@@ -177,7 +178,7 @@ export const references = [
   {
     id: 1,
     name: "Frank Siebenmorgen",
-    position: "IT Manager",
+    position: "Head of IT Infrastructure and Country Services",
     company: "Sandvik AB, Sweden",
     email: "frank.siebenmorgen@sandvik.com",
   },
