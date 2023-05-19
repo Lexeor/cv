@@ -31,13 +31,23 @@ function Project(props) {
       </Link>
       <div className="project-details">
         {currentProject.gitUrl && (
-          <a href={currentProject.gitUrl} className="git-button">
+          <a
+            href={currentProject.gitUrl}
+            className="git-button"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i class="fa-brands fa-github"></i>
             <span>GitHub Repo</span>
           </a>
         )}
         {currentProject.gitPagesUrl && (
-          <a href={currentProject.gitUrl} className="git-button green">
+          <a
+            href={currentProject.gitPagesUrl}
+            className="git-button green"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i class="fa-brands fa-github"></i>
             <span>GitHub Pages</span>
           </a>
