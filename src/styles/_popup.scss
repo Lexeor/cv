@@ -68,3 +68,31 @@
     margin: 0 auto;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .popup {
+    width: 100%;
+    flex-direction: column;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+  }
+
+  .popup-details {
+    order: 1;
+  }
+
+  .popup-sidebar {
+    width: 100%;
+
+    .popup-image {
+      order: 2;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

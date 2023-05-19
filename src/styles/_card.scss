@@ -10,8 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 70px;
-  min-height: 70px;
+  min-width: 80px;
+  min-height: 80px;
   background-color: $colorBtn;
   border-radius: 8px;
   padding: 10px;
@@ -33,6 +33,11 @@
   span {
     font-size: 0.7em;
   }
+}
+
+.card-link {
+  all: unset;
+  cursor: pointer;
 }
 
 // Colors
@@ -64,6 +69,10 @@
   color: #0a66c2;
 }
 
+.fa-file-pdf {
+  color: $colorRed;
+}
+
 // Certification card
 
 .cert-card {
@@ -73,14 +82,23 @@
   border-radius: 8px;
   overflow: hidden;
 
-  img {
-    object-fit: cover;
-    max-width: 100px;
-    height: auto;
-  }
-
   i {
     font-size: 32px;
+    padding: 1em;
+  }
+}
+
+.cert-card-row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+
+  img {
+    object-fit: contain;
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px;
     padding: 1em;
   }
 }
@@ -102,16 +120,37 @@
 }
 
 .download-icon {
+  all: unset;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  a {
-    all: unset;
-  }
+  padding-left: 1em;
 
   &:hover {
     cursor: pointer;
     background-color: $colorBtnHover;
+  }
+
+  span {
+    color: $colorRed;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .cert-card {
+    flex-direction: column;
+
+    i {
+      padding: 0.5em;
+    }
+  }
+
+  .cert-card-row {
+    display: flex;
+  }
+
+  .download-icon {
+    padding: 0;
   }
 }
