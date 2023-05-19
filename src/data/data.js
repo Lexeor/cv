@@ -22,14 +22,29 @@ export const skills = {
     {
       id: 1,
       name: "C#",
-      icon: "fa-brands fa-square-js",
-      color: "green",
+      icon: null,
+      svg: "cSharp",
+      color: null,
     },
     {
       id: 2,
       name: "Python",
       icon: "fa-brands fa-python",
       color: "python",
+    },
+    {
+      id: 3,
+      name: "Photoshop",
+      icon: null,
+      svg: "photoshop",
+      color: null,
+    },
+    {
+      id: 3,
+      name: "Illustrator",
+      icon: null,
+      svg: "illustrator",
+      color: null,
     },
   ],
 };

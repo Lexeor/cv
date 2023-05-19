@@ -5,7 +5,7 @@ import Popup from "./components/popup/Popup";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App inactive">
       <div className="container">
         <InfoBar />
         <PopupContextProvider>

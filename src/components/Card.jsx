@@ -8,13 +8,22 @@ function Card(props) {
   const finalCard = props.item.url ? (
     <a href={props.item.url} target="_blank" className="card-link">
       <div className="skill-card">
-        <i className={buildClass()}></i>
+        {props.item.icon ? (
+          <i className={buildClass()}></i>
+        ) : (
+          <img src={`${props.item.svg}.svg`} alt="icon" />
+        )}
+
         <span>{props.item.name}</span>
       </div>
     </a>
   ) : (
     <div className="skill-card">
-      <i className={buildClass()}></i>
+      {props.item.icon ? (
+        <i className={buildClass()}></i>
+      ) : (
+        <img src={`${props.item.svg}.svg`} alt="icon" />
+      )}
       <span>{props.item.name}</span>
     </div>
   );

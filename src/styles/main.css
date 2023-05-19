@@ -23,6 +23,10 @@ body {
   flex-direction: column;
 }
 
+.inactive {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   max-width: 1376px;
@@ -170,6 +174,11 @@ h4 {
 }
 .skill-card span {
   font-size: 0.7em;
+}
+.skill-card img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 5px;
 }
 
 .card-link {
@@ -454,12 +463,17 @@ h4 {
     width: 100%;
     flex-direction: column;
     display: block;
-    position: fixed;
+    position: absolute;
+    overflow-y: scroll;
     top: 0;
     left: 0;
-    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     margin: 0;
+    z-index: 1000;
+  }
+  .overlay {
+    height: 100%;
+    z-index: 1000;
   }
   .popup-details {
     order: 1;

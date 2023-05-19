@@ -7,7 +7,6 @@ function Popup(props) {
   const { showPopup, togglePopup, popupContentId } = useContext(PopupContext);
 
   const currentProject = projects[popupContentId];
-  const imgPath = `./cv/${currentProject.image}`;
 
   const renderGoal = currentProject.goal.map((line) => {
     return <p>{line}</p>;
@@ -29,7 +28,7 @@ function Popup(props) {
         <i className="ri-close-line close" onClick={() => togglePopup()}></i>
         <div className="popup-sidebar">
           <div className="popup-image">
-            <img src={imgPath} />
+            <img src={currentProject.image} />
           </div>
           <div className="popup-details">
             <h3>{currentProject.name}</h3>

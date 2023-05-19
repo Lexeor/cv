@@ -74,12 +74,18 @@
     width: 100%;
     flex-direction: column;
     display: block;
-    position: fixed;
+    position: absolute;
+    overflow-y: scroll;
     top: 0;
     left: 0;
-    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     margin: 0;
+    z-index: 1000;
+  }
+
+  .overlay {
+    height: 100%;
+    z-index: 1000;
   }
 
   .popup-details {
