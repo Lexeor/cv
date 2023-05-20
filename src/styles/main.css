@@ -136,6 +136,64 @@ h4 {
   cursor: pointer;
 }
 
+.btn-print {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 1.2em;
+  margin-top: 4em;
+  background-color: #0c73fe;
+  color: white;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.btn-print:hover {
+  background-color: white;
+  color: #0c73fe;
+  cursor: pointer;
+}
+
+.contacts-print,
+.references-print {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  margin-bottom: 1em;
+}
+.contacts-print h1,
+.references-print h1 {
+  font-weight: 400;
+  margin-bottom: 0.2em;
+  color: #0c73fe;
+  font-size: 1.5em;
+}
+.contacts-print .ref-position,
+.contacts-print .ref-company,
+.contacts-print .ref-email,
+.references-print .ref-position,
+.references-print .ref-company,
+.references-print .ref-email {
+  font-size: 0.8em;
+}
+.contacts-print .ref-email,
+.references-print .ref-email {
+  color: #0000ee;
+}
+.contacts-print .contacts-line,
+.references-print .contacts-line {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 0.8em;
+}
+.contacts-print .contacts-line i,
+.references-print .contacts-line i {
+  font-size: 1.4em;
+}
+
 @media only screen and (max-width: 600px) {
   .info-bar {
     flex-direction: column;
@@ -165,6 +223,9 @@ h4 {
   }
   .contacts {
     flex-direction: row;
+  }
+  .btn-print {
+    display: none;
   }
 }
 .content {
@@ -1028,5 +1089,35 @@ h4 {
   }
   p {
     font-size: 1.2em;
+  }
+}
+@media print {
+  .no-print,
+  a.download-icon,
+  .btn-print,
+  .contacts {
+    display: none;
+  }
+  .section p {
+    margin-bottom: 0;
+  }
+  .content {
+    gap: 0;
+    border-right: 0;
+  }
+  .info-bar {
+    background-color: #f9f9f9;
+    color: black;
+  }
+  .info-bar h3 {
+    margin-bottom: 1em;
+  }
+  .img-area {
+    border: 4px solid #0c73fe;
+    box-shadow: inset 0 0 0 5px white;
+  }
+  .contacts-print,
+  .references-print {
+    display: flex;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -104,6 +104,64 @@
   }
 }
 
+.btn-print {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 1.2em;
+  margin-top: 4em;
+  background-color: $colorPrimary;
+  color: $colorWhite;
+  border: 1px solid $colorWhite;
+  border-radius: 12px;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    background-color: $colorWhite;
+    color: $colorPrimary;
+    cursor: pointer;
+  }
+}
+
+// Print area
+.contacts-print,
+.references-print {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  margin-bottom: 1em;
+
+  h1 {
+    font-weight: 400;
+    margin-bottom: 0.2em;
+    color: $colorPrimary;
+    font-size: 1.5em;
+  }
+
+  .ref-position,
+  .ref-company,
+  .ref-email {
+    font-size: 0.8em;
+  }
+
+  .ref-email {
+    color: #0000ee;
+  }
+
+  .contacts-line {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 0.8em;
+
+    i {
+      font-size: 1.4em;
+    }
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .info-bar {
     flex-direction: column;
@@ -139,5 +197,9 @@
 
   .contacts {
     flex-direction: row;
+  }
+
+  .btn-print {
+    display: none;
   }
 }

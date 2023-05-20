@@ -43,7 +43,7 @@ function Home(props) {
   });
 
   const recommendationsRender = references.map((item) => {
-    return <RecommendationCard key={item.id} item={item} />;
+    return <RecommendationCard key={item.id} item={item} sideBar={false} />;
   });
 
   return (
@@ -71,20 +71,20 @@ function Home(props) {
         <p>И всегда буду рад научиться чему-то новому.</p>
       </section>
       <section>
-        <h1>Проекты</h1>
-        <div className="projects-wrapper">{projectsRender}</div>
+        <h1 className="no-print">Проекты</h1>
+        <div className="projects-wrapper no-print">{projectsRender}</div>
       </section>
       <section>
         <h1>Образование</h1>
         <div className="cards-wrapper">{certificationsRender}</div>
       </section>
       <section>
-        <h1>Ссылки</h1>
-        <div className="cards-wrapper">{linksRender}</div>
+        <h1 className="no-print">Ссылки</h1>
+        <div className="cards-wrapper no-print">{linksRender}</div>
       </section>
       <section>
-        <h1>Рекомендации</h1>
-        <div className="cards-wrapper">{recommendationsRender}</div>
+        <h1 className="no-print">Рекомендации</h1>
+        <div className="cards-wrapper no-print">{recommendationsRender}</div>
       </section>
     </div>
   );

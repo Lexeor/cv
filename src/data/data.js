@@ -106,6 +106,7 @@ export const links = [
     icon: "fa-brands fa-github",
     url: "https://github.com/Lexeor",
     color: "black",
+    str: "Lexeor",
   },
   {
     id: 1,
@@ -113,6 +114,7 @@ export const links = [
     icon: "fa-brands fa-linkedin",
     url: "https://www.linkedin.com/in/alexander-tarasov-react/",
     color: "linkedinBlue",
+    str: "alexander-tarasov-react",
   },
 ];
 

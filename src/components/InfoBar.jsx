@@ -1,6 +1,13 @@
 import React from "react";
+import { references } from "../data/data";
+import RecommendationCard from "./RecommendationCard";
+import QRCode from "react-qr-code";
 
-function InfoBar() {
+function InfoBar(props) {
+  const recommendationsRender = references.map((item) => {
+    return <RecommendationCard key={item.id} item={item} sideBar={true} />;
+  });
+
   return (
     <div className="info-bar">
       <div className="info-bar-columns">
@@ -30,6 +37,37 @@ function InfoBar() {
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </div>
+      </div>
+      <button className="btn-print" onClick={props.handlePrint}>
+        <i className="fa-solid fa-print"></i>
+        <span>Распечатать</span>
+      </button>
+      <div className="contacts-print">
+        <h1 className="h-print">Контакты</h1>
+        <div className="contacts-line">
+          <i className="fa-brands fa-telegram"></i>
+          <span>@Lexeor</span>
+        </div>
+        <div className="contacts-line">
+          <i className="fa-regular fa-envelope"></i>
+          <span>lexeor.ross@gmail.com</span>
+        </div>
+        <div className="contacts-line">
+          <i className="fa-brands fa-linkedin"></i>
+          <span>@alexander-tarasov-react</span>
+        </div>
+      </div>
+      <div className="references-print">
+        <h1 className="h-print">Рекомендации</h1>
+        {recommendationsRender}
+      </div>
+      <div className="contacts-print">
+        <h1 className="h-print">Веб-версия</h1>
+        <QRCode
+          value="https://lexeor.github.io/cv/"
+          className="h-print"
+          size="150"
+        />
       </div>
     </div>
   );

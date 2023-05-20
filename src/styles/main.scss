@@ -66,3 +66,40 @@ h4 {
     font-size: 1.2em;
   }
 }
+
+@media print {
+  .no-print,
+  a.download-icon,
+  .btn-print,
+  .contacts {
+    display: none;
+  }
+
+  .section p {
+    margin-bottom: 0;
+  }
+
+  .content {
+    gap: 0;
+    border-right: 0;
+  }
+
+  .info-bar {
+    background-color: $colorBackground;
+    color: $colorBlack;
+
+    h3 {
+      margin-bottom: 1em;
+    }
+  }
+
+  .img-area {
+    border: 4px solid $colorPrimary;
+    box-shadow: inset 0 0 0 5px $colorWhite;
+  }
+
+  .contacts-print,
+  .references-print {
+    display: flex;
+  }
+}

@@ -9,10 +9,13 @@ function RecommendationCard(props) {
         <div className="ref-name">{props.item.name}</div>
         <div className="ref-position">{props.item.position}</div>
         <div className="ref-company">{props.item.company}</div>
+        {props.sideBar && <span className="ref-email">{props.item.email}</span>}
       </div>
-      <a href={mailRef} className="ref-mailto">
-        <i className="fa-regular fa-envelope"></i>
-      </a>
+      {!props.sideBar && (
+        <a href={mailRef} className="ref-mailto">
+          <i className="fa-regular fa-envelope"></i>
+        </a>
+      )}
     </div>
   );
 }
