@@ -68,7 +68,7 @@ function Home(props) {
         <div className="cards-wrapper">{secondarySkillsRender}</div>
         <h2>Разберусь "со словарём"</h2>
         <div className="cards-wrapper">{dictionarySkillsRender}</div>
-        <p>И я всегда буду рад научиться чему-то новому</p>
+        <p>И всегда буду рад научиться чему-то новому.</p>
       </section>
       <section>
         <h1>Проекты</h1>

@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .skill-card {
@@ -78,6 +78,7 @@
 .cert-card {
   @include card-body;
 
+  padding: 0;
   width: 100%;
 }
 
@@ -118,6 +119,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-left: 1px solid $colorSeparator;
 
   &:hover {
     cursor: pointer;
@@ -127,6 +129,7 @@
   i {
     font-size: 32px;
     padding: 0.5em;
+    padding-right: 0.2em;
   }
 
   span {
@@ -188,5 +191,11 @@
   .download-icon {
     flex-direction: row;
     padding: 0;
+    border-left: 0;
+    border-top: 1px solid $colorSeparator;
+
+    span {
+      padding: 0;
+    }
   }
 }
