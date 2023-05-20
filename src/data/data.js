@@ -60,19 +60,19 @@ export const skills = {
 export const certifications = [
   {
     id: 0,
-    logo: "misis-logo.png",
+    logo: "/images/misis-logo.png",
     name: "Московский Институт Стали и Сплавов (МИСиС)",
     specialization: "Автоматизация технологических процессов и производств",
     graduationDate: "16.06.2010",
-    url: "misis.pdf",
+    url: "/files/misis.pdf",
   },
   {
     id: 1,
-    logo: "scrimba-logo.png",
+    logo: "/images/scrimba-logo.png",
     name: "Scrimba.com",
     specialization: "The Front-End Developer Career Path",
     graduationDate: "08.09.2022",
-    url: "scrimba.pdf",
+    url: "/files/scrimba.pdf",
   },
 ];
 
@@ -96,7 +96,12 @@ export const links = [
 export const projects = [
   {
     id: 0,
-    images: ["itinfo_1.png", "itinfo_2.png", "itinfo_3.png", "itinfo_4.png"],
+    images: [
+      "/images/projects/itinfo_1.png",
+      "/images/projects/itinfo_2.png",
+      "/images/projects/itinfo_3.png",
+      "/images/projects/itinfo_4.png",
+    ],
     name: "IT Info Portal",
     desc: "Проект по сбору, анализу и удобному отображению корпоративной информации об оборудовании и сетях на моей прошлой должности IT координатора инфраструктуры.",
     stack: [
@@ -124,7 +129,39 @@ export const projects = [
   },
   {
     id: 1,
-    images: ["cadence_1.png", "cadence_2.gif"],
+    images: [
+      "/images/projects/extension_1.png",
+      "/images/projects/extension_2.gif",
+      "/images/projects/extension_3.png",
+      "/images/projects/extension_4.png",
+    ],
+    name: "New tab Chrome extension",
+    desc: "Расширение к Chrome с прямым поиском в YouTube и Google, настраиваемым избранным, а также небольшим виджетом погоды.",
+    stack: [
+      { id: 0, name: "HTML", color: "bg-yellow" },
+      { id: 1, name: "CSS", color: "bg-blue" },
+      { id: 2, name: "JavaScript", color: "bg-yellow" },
+      { id: 3, name: "React", color: "bg-react-blue" },
+      { id: 4, name: "GitHub", color: "bg-black" },
+    ],
+    goal: [
+      "Стандартная заглушка у новой старницы в Chrome, конечно, замечательная, но за столько лет уже поднадоела, потому и пришла идея сделать её более кастомизированной, а заодно потренироваться в заборе данных со стороннего API. Ну и, конечно же, прямой поиск на YouTube сэкономит целый клик! А с количеством кликов, которые мы делаем в день - это целая жизнь :)",
+    ],
+    solution: [
+      "- Строка поиска с переключателем поисковика YouTube/Google.",
+      "- Виджет по добавлению избранного с возможностью сохранять данные пользователя как в local.storage (при разработке), так и в chrome.storage (в рабочем билде).",
+      "- Виджет отображения погоды с данными из OpenWeather API.",
+      "- Меню настроек с возможностью отключения любого из виджетов (также сохраняются в local.storage/chrome.storage в зависимости от среды).",
+      "- Смена цвета фона в зависимости от времени суток. (Должен же программист хоть иногда иметь представление, что там происходит за окном)",
+    ],
+    gitUrl: "https://github.com/Lexeor/ntb-extension",
+  },
+  {
+    id: 2,
+    images: [
+      "/images/projects/cadence_1.png",
+      "/images/projects/cadence_2.gif",
+    ],
     name: "Cadence Assistant",
     desc: "Небольшой инструмент, помогающий поддерживать заданный ритм при кардиотренировках.",
     stack: [
@@ -147,30 +184,6 @@ export const projects = [
     gitPagesUrl: "https://lexeor.github.io/cadence-assistant/",
   },
 ];
-
-// const notCompilingProject = {
-//   id: 2,
-//   images: ["/ntb-extension.png"],
-//   name: "New tab Chrome extension",
-//   desc: "Расширение к Chrome с прямым поиском в YouTube и Google, настраиваемым избранным, а также небольшим виджетом погоды.",
-//   stack: [
-//     { id: 0, name: "HTML", color: "bg-yellow" },
-//     { id: 1, name: "CSS", color: "bg-blue" },
-//     { id: 2, name: "JavaScript", color: "bg-yellow" },
-//     { id: 3, name: "React", color: "bg-react-blue" },
-//     { id: 4, name: "GitHub", color: "bg-black" },
-//   ],
-//   goal: [
-//     "Стандартная заглушка у новой старницы в Chrome, конечно, замечательная, но за столько лет уже поднадоела, потому и пришла идея сделать её более кастомизированной, а заодно потренироваться в заборе данных со стороннего API. Ну и, конечно же, прямой поиск на YouTube сэкономит целый клик! А с количеством кликов, которые мы делаем в день - это целая жизнь :)",
-//   ],
-//   solution: [
-//     "- Строка поиска с переключателем поисковика YouTube/Google.",
-//     "- Виджет по добавлению избранного с возможностью сохранять данные пользователя как в local.storage (при разработке), так и в chrome.storage (в рабочем билде).",
-//     "- Виджет отображения погоды с данными из OpenWeather API.",
-//     "- Меню настроек с возможностью отключения любого из виджетов (также сохраняются в local.storage/chrome.storage в зависимости от среды).",
-//   ],
-//   gitUrl: "https://github.com/Lexeor/ntb-extension",
-// };
 
 export const references = [
   {

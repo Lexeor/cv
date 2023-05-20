@@ -37,7 +37,7 @@ function Project(props) {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
             <span>GitHub Repo</span>
           </a>
         )}
@@ -48,7 +48,7 @@ function Project(props) {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
             <span>GitHub Pages</span>
           </a>
         )}
