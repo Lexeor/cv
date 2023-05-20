@@ -20,6 +20,10 @@ function Home(props) {
     return <Card key={item.id} item={item} />;
   });
 
+  const dictionarySkillsRender = skills.third.map((item) => {
+    return <Card key={item.id} item={item} />;
+  });
+
   const linksRender = links.map((item) => {
     return <Card key={item.id} item={item} />;
   });
@@ -62,6 +66,8 @@ function Home(props) {
         <div className="cards-wrapper">{primarySkillsRender}</div>
         <h2>Дополнительные</h2>
         <div className="cards-wrapper">{secondarySkillsRender}</div>
+        <h2>Разберусь "со словарём"</h2>
+        <div className="cards-wrapper">{dictionarySkillsRender}</div>
         <p>И я всегда буду рад научиться чему-то новому</p>
       </section>
       <section>

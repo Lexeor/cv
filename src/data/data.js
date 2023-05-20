@@ -17,7 +17,7 @@ export const skills = {
     { id: 3, name: "CSS", icon: "fa-brands fa-css3", color: "blue" },
     { id: 4, name: "SCSS", icon: "fa-brands fa-sass", color: "violet" },
     { id: 5, name: "React", icon: "fa-brands fa-react", color: "react-blue" },
-    { id: 6, name: "git", icon: "fa-brands fa-github", color: "black" },
+    { id: 6, name: "git", icon: null, svg: "git", color: null },
   ],
   secondary: [
     {
@@ -55,24 +55,47 @@ export const skills = {
       color: null,
     },
   ],
+  third: [
+    {
+      id: 0,
+      name: "Figma",
+      icon: null,
+      svg: "figma",
+      color: null,
+    },
+    {
+      id: 1,
+      name: "Adobe XD",
+      icon: null,
+      svg: "adobeXD",
+      color: null,
+    },
+    {
+      id: 2,
+      name: "Docker",
+      icon: null,
+      svg: "docker",
+      color: null,
+    },
+  ],
 };
 
 export const certifications = [
   {
     id: 0,
-    logo: "/images/misis-logo.png",
+    logo: "images/misis-logo.png",
     name: "Московский Институт Стали и Сплавов (МИСиС)",
     specialization: "Автоматизация технологических процессов и производств",
     graduationDate: "16.06.2010",
-    url: "/files/misis.pdf",
+    url: "files/misis.pdf",
   },
   {
     id: 1,
-    logo: "/images/scrimba-logo.png",
+    logo: "images/scrimba-logo.png",
     name: "Scrimba.com",
     specialization: "The Front-End Developer Career Path",
     graduationDate: "08.09.2022",
-    url: "/files/scrimba.pdf",
+    url: "files/scrimba.pdf",
   },
 ];
 
@@ -97,10 +120,10 @@ export const projects = [
   {
     id: 0,
     images: [
-      "/images/projects/itinfo_1.png",
-      "/images/projects/itinfo_2.png",
-      "/images/projects/itinfo_3.png",
-      "/images/projects/itinfo_4.png",
+      "images/projects/itinfo_1.png",
+      "images/projects/itinfo_2.png",
+      "images/projects/itinfo_3.png",
+      "images/projects/itinfo_4.png",
     ],
     name: "IT Info Portal",
     desc: "Проект по сбору, анализу и удобному отображению корпоративной информации об оборудовании и сетях на моей прошлой должности IT координатора инфраструктуры.",
@@ -130,10 +153,10 @@ export const projects = [
   {
     id: 1,
     images: [
-      "/images/projects/extension_1.png",
-      "/images/projects/extension_2.gif",
-      "/images/projects/extension_3.png",
-      "/images/projects/extension_4.png",
+      "images/projects/extension_1.png",
+      "images/projects/extension_2.gif",
+      "images/projects/extension_3.png",
+      "images/projects/extension_4.png",
     ],
     name: "New tab Chrome extension",
     desc: "Расширение к Chrome с прямым поиском в YouTube и Google, настраиваемым избранным, а также небольшим виджетом погоды.",
@@ -158,10 +181,7 @@ export const projects = [
   },
   {
     id: 2,
-    images: [
-      "/images/projects/cadence_1.png",
-      "/images/projects/cadence_2.gif",
-    ],
+    images: ["images/projects/cadence_1.png", "images/projects/cadence_2.gif"],
     name: "Cadence Assistant",
     desc: "Небольшой инструмент, помогающий поддерживать заданный ритм при кардиотренировках.",
     stack: [
