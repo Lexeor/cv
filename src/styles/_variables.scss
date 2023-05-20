@@ -3,10 +3,13 @@ $colorPrimary: #0c73fe;
 $colorPrimaryShaded: #0a5cc7;
 $colorWhite: white;
 $colorGray: rgb(200, 200, 200);
-$colorBtn: rgba(67, 83, 106, 0.08);
-$colorBtnHover: #dae2e9;
+//$colorBtn: rgba(67, 83, 106, 0.08);
+$colorBtn: #ffffff;
+$colorBtnHover: #eaeaea;
 $colorBlack: black;
 $colorSeparator: rgba(0, 0, 0, 0.08);
+$colorBackground: #f9f9f9;
+$colorShadow: rgba(0, 0, 0, 0.04);
 
 // SoftwareColors
 $colorCSS: #3f5aa8;
@@ -25,3 +28,18 @@ $textSecondary: rgb(100, 100, 100);
 // Fonts
 $fontMain: "Inter", sans-serif;
 $fontHeaders: "Bebas Neue", sans-serif;
+
+// Mixins
+
+@mixin card-body {
+  display: flex;
+  overflow: hidden;
+  background-color: $colorBtn;
+  border-radius: 8px;
+  padding: 10px;
+  transition: ease-in-out 0.2s;
+  box-shadow: 0 0 2px 2px $colorShadow;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}

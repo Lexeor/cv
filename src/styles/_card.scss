@@ -6,23 +6,16 @@
 }
 
 .skill-card {
-  display: flex;
+  @include card-body;
+
   flex-direction: column;
   justify-content: center;
   gap: 0.2em;
   align-items: center;
   min-width: 80px;
   min-height: 80px;
-  background-color: $colorBtn;
-  border-radius: 8px;
-  padding: 10px;
-  transition: ease-in-out 0.2s;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
 
   &:hover {
-    background-color: $colorBtnHover;
     scale: 1.05;
   }
 
@@ -83,11 +76,9 @@
 // Certification card
 
 .cert-card {
-  display: flex;
+  @include card-body;
+
   width: 100%;
-  background-color: $colorBtn;
-  border-radius: 8px;
-  overflow: hidden;
 }
 
 .cert-card-row {
@@ -145,37 +136,14 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
-  .cert-card {
-    flex-direction: column;
-
-    i {
-      padding: 0.5em;
-    }
-  }
-
-  .cert-card-row {
-    display: flex;
-  }
-
-  .download-icon {
-    flex-direction: row;
-    padding: 0;
-  }
-}
+// Reference Card
 
 .ref-card {
-  display: flex;
+  @include card-body;
+
   flex-direction: row;
   align-items: center;
   width: 100%;
-  background-color: $colorBtn;
-  border-radius: 8px;
-  padding: 10px;
-  transition: ease-in-out 0.2s;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
 
   .ref-card-details {
     flex-grow: 1;
@@ -201,5 +169,24 @@
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .cert-card {
+    flex-direction: column;
+
+    i {
+      padding: 0.5em;
+    }
+  }
+
+  .cert-card-row {
+    display: flex;
+  }
+
+  .download-icon {
+    flex-direction: row;
+    padding: 0;
   }
 }

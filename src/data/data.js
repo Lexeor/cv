@@ -15,7 +15,7 @@ export const skills = {
     },
     { id: 2, name: "HTML", icon: "fa-brands fa-html5", color: "yellow" },
     { id: 3, name: "CSS", icon: "fa-brands fa-css3", color: "blue" },
-    { id: 4, name: "SCSS", icon: "fa-brands fa-sass", color: "violet" },
+    { id: 4, name: "Sass", icon: "fa-brands fa-sass", color: "violet" },
     { id: 5, name: "React", icon: "fa-brands fa-react", color: "react-blue" },
     { id: 6, name: "git", icon: null, svg: "git", color: null },
   ],

@@ -174,6 +174,7 @@ h4 {
   gap: 1em;
   color: black;
   border-right: 4px solid #0c73fe;
+  background-color: #f9f9f9;
 }
 .content h1,
 .content h2,
@@ -203,22 +204,23 @@ h4 {
 
 .skill-card {
   display: flex;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  transition: ease-in-out 0.2s;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.04);
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
   flex-direction: column;
   justify-content: center;
   gap: 0.2em;
   align-items: center;
   min-width: 80px;
   min-height: 80px;
-  background-color: rgba(67, 83, 106, 0.08);
-  border-radius: 8px;
-  padding: 10px;
-  transition: ease-in-out 0.2s;
-  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
-  -moz-user-select: none;
-       user-select: none; /* Standard syntax */
 }
 .skill-card:hover {
-  background-color: #dae2e9;
   scale: 1.05;
 }
 .skill-card i {
@@ -273,10 +275,16 @@ h4 {
 
 .cert-card {
   display: flex;
-  width: 100%;
-  background-color: rgba(67, 83, 106, 0.08);
-  border-radius: 8px;
   overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  transition: ease-in-out 0.2s;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.04);
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
+  width: 100%;
 }
 
 .cert-card-row {
@@ -317,7 +325,7 @@ h4 {
 }
 .download-icon:hover {
   cursor: pointer;
-  background-color: #dae2e9;
+  background-color: #eaeaea;
 }
 .download-icon i {
   font-size: 32px;
@@ -329,33 +337,20 @@ h4 {
   padding: 0.5em 0.5em 0 0.5em;
 }
 
-@media only screen and (max-width: 900px) {
-  .cert-card {
-    flex-direction: column;
-  }
-  .cert-card i {
-    padding: 0.5em;
-  }
-  .cert-card-row {
-    display: flex;
-  }
-  .download-icon {
-    flex-direction: row;
-    padding: 0;
-  }
-}
 .ref-card {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  background-color: rgba(67, 83, 106, 0.08);
+  overflow: hidden;
+  background-color: #ffffff;
   border-radius: 8px;
   padding: 10px;
   transition: ease-in-out 0.2s;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.04);
   -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
   -moz-user-select: none;
        user-select: none; /* Standard syntax */
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
 }
 .ref-card .ref-card-details {
   flex-grow: 1;
@@ -379,6 +374,21 @@ h4 {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 900px) {
+  .cert-card {
+    flex-direction: column;
+  }
+  .cert-card i {
+    padding: 0.5em;
+  }
+  .cert-card-row {
+    display: flex;
+  }
+  .download-icon {
+    flex-direction: row;
+    padding: 0;
+  }
+}
 .projects-wrapper {
   display: flex;
   gap: 1em;
@@ -393,13 +403,14 @@ h4 {
 }
 
 .project-card {
-  background-color: rgba(67, 83, 106, 0.08);
+  background-color: #ffffff;
   flex-grow: 1;
   width: 48%;
   border-radius: 12px;
   display: flex;
   overflow: hidden;
   transition: ease-in-out 0.2s;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.04);
   -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
   -moz-user-select: none;
        user-select: none; /* Standard syntax */
@@ -940,6 +951,7 @@ h4 {
   position: relative;
   overflow: hidden;
   border-right: 4px solid #0c73fe;
+  background-color: #f9f9f9;
 }
 .project-main h1 {
   font-size: 1.5em;
