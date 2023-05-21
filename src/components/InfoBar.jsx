@@ -1,9 +1,12 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { references } from "../data/data";
 import RecommendationCard from "./RecommendationCard";
 import QRCode from "react-qr-code";
 
 function InfoBar(props) {
+  const location = useLocation();
+
   const recommendationsRender = references.map((item) => {
     return <RecommendationCard key={item.id} item={item} sideBar={true} />;
   });
@@ -38,10 +41,12 @@ function InfoBar(props) {
           </a>
         </div>
       </div>
-      <button className="btn-print" onClick={props.handlePrint}>
-        <i className="fa-solid fa-print"></i>
-        <span>Распечатать</span>
-      </button>
+      {location.pathname === "/" && (
+        <button className="btn-print" onClick={props.handlePrint}>
+          <i className="fa-solid fa-print"></i>
+          <span>Распечатать</span>
+        </button>
+      )}
       <div className="contacts-print">
         <h1 className="h-print">Контакты</h1>
         <div className="contacts-line">
@@ -66,7 +71,7 @@ function InfoBar(props) {
         <QRCode
           value="https://lexeor.github.io/cv/"
           className="h-print"
-          size="150"
+          size={150}
         />
       </div>
     </div>
