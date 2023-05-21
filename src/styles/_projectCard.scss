@@ -12,17 +12,11 @@
 }
 
 .project-card {
-  background-color: $colorBtn;
+  @include card-body;
+
   flex-grow: 1;
   width: 48%;
-  border-radius: 12px;
-  display: flex;
-  overflow: hidden;
-  transition: ease-in-out 0.2s;
-  box-shadow: 0 0 2px 2px $colorShadow;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+  padding: 0;
 
   &:hover {
     cursor: pointer;

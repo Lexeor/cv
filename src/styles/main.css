@@ -246,11 +246,16 @@ h4 {
 }
 .content h1 {
   color: #0c73fe;
+  margin-top: 0.5em;
 }
 .content h2 {
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: 500;
+}
+.content p {
+  margin-top: 0.5em;
+  margin-bottom: 0em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -374,6 +379,7 @@ h4 {
 }
 .cert-card-content h2,
 .cert-card-content h3 {
+  font-size: 0.9em;
   margin-bottom: 0.2em;
 }
 .cert-card-content h3 {
@@ -474,17 +480,19 @@ h4 {
 }
 
 .project-card {
-  background-color: #ffffff;
-  flex-grow: 1;
-  width: 48%;
-  border-radius: 12px;
   display: flex;
   overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
   transition: ease-in-out 0.2s;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.04);
   -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
   -moz-user-select: none;
        user-select: none; /* Standard syntax */
+  flex-grow: 1;
+  width: 48%;
+  padding: 0;
 }
 .project-card:hover {
   cursor: pointer;
@@ -1028,6 +1036,9 @@ h4 {
   font-size: 1.5em;
   margin-bottom: 0.5em;
 }
+.project-main h2 {
+  margin-bottom: 0.5em;
+}
 .project-main img {
   border-radius: 12px;
 }
@@ -1119,5 +1130,8 @@ h4 {
   .contacts-print,
   .references-print {
     display: flex;
+  }
+  .ref-name {
+    font-weight: 500;
   }
 }/*# sourceMappingURL=main.css.map */

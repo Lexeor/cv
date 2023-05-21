@@ -71,7 +71,8 @@ function InfoBar(props) {
         <QRCode
           value="https://lexeor.github.io/cv/"
           className="h-print"
-          size={150}
+          size={170}
+          bgColor={"#f9f9f9"}
         />
       </div>
     </div>

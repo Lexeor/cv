@@ -61,6 +61,7 @@ function Project(props) {
         <h2>Использованный стек</h2>
         <div className="stack-wrapper">{stackRender}</div>
       </div>
+      <h2>Визуализация</h2>
       <div className="proj-image-area">
         <ImageGallery
           items={images}
