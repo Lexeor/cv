@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { references } from "../data/data";
 import RecommendationCard from "./RecommendationCard";
 import QRCode from "react-qr-code";
+import { isMobile } from "react-device-detect";
 
 function InfoBar(props) {
   const location = useLocation();
@@ -41,7 +42,7 @@ function InfoBar(props) {
           </a>
         </div>
       </div>
-      {location.pathname === "/" && (
+      {location.pathname === "/" && !isMobile && (
         <button className="btn-print" onClick={props.handlePrint}>
           <i className="fa-solid fa-print"></i>
           <span>Распечатать</span>

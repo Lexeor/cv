@@ -13,7 +13,7 @@ function App() {
 
   const reactToPrintContent = useCallback(() => {
     return componentRef.current;
-  }, [componentRef.current]);
+  }, []);
 
   const handlePrint = useReactToPrint({
     content: reactToPrintContent,

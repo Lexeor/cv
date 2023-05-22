@@ -76,36 +76,36 @@
 
 // Colors
 .bg-blue {
-  background-color: #3f5aa8;
+  background-color: $colorCSS;
 }
 
 .bg-react-blue {
-  background-color: #6ccef0;
+  background-color: $colorReact;
 }
 
 .bg-yellow {
-  background-color: #d5ba33;
+  background-color: $colorJS;
 }
 
 .bg-orange {
-  background-color: #e34d27;
+  background-color: $colorSql;
 }
 
 .bg-violet {
-  background-color: #cd6799;
+  background-color: $colorCSharp;
 }
 
 .bg-python {
-  background-color: #4584b6;
+  background-color: $colorPython;
 }
 
 .bg-linkedin-blue {
-  background-color: #0a66c2;
+  background-color: $colorLinkedin;
 }
 
 .bg-black {
-  background-color: black;
-  color: whitesmoke;
+  background-color: $colorBlack;
+  color: $text;
 }
 
 @media only screen and (max-width: 1100px) {
