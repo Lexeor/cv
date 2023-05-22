@@ -99,6 +99,10 @@
     max-height: 100px;
     padding: 1em;
   }
+
+  span {
+    font-size: 0.9em;
+  }
 }
 
 .cert-card-content {
@@ -106,6 +110,7 @@
   flex-direction: column;
   flex-grow: 1;
   padding: 1em;
+  padding-left: 0;
 
   h2,
   h3 {

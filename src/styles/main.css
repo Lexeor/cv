@@ -374,12 +374,16 @@ h4 {
   max-height: 100px;
   padding: 1em;
 }
+.cert-card-row span {
+  font-size: 0.9em;
+}
 
 .cert-card-content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   padding: 1em;
+  padding-left: 0;
 }
 .cert-card-content h2,
 .cert-card-content h3 {
