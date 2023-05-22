@@ -58,6 +58,7 @@
   color: $colorWhite;
   padding: 3px 10px;
   font-size: 0.7em;
+  opacity: 0.9;
 }
 
 .project-image {
@@ -85,6 +86,10 @@
 
 .bg-yellow {
   background-color: $colorJS;
+}
+
+.bg-html {
+  background-color: $colorHtml;
 }
 
 .bg-orange {

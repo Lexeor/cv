@@ -13,7 +13,7 @@ export const skills = {
       icon: "fa-brands fa-square-js",
       color: "yellow",
     },
-    { id: 2, name: "HTML", icon: "fa-brands fa-html5", color: "yellow" },
+    { id: 2, name: "HTML", icon: "fa-brands fa-html5", color: "orangeHtml" },
     { id: 3, name: "CSS", icon: "fa-brands fa-css3", color: "blue" },
     { id: 4, name: "Sass", icon: "fa-brands fa-sass", color: "violet" },
     { id: 5, name: "React", icon: "fa-brands fa-react", color: "react-blue" },
@@ -130,7 +130,7 @@ export const projects = [
     name: "IT Info Portal",
     desc: "Проект по сбору, анализу и удобному отображению корпоративной информации об оборудовании и сетях на моей прошлой должности IT координатора инфраструктуры.",
     stack: [
-      { id: 0, name: "HTML", color: "bg-yellow" },
+      { id: 0, name: "HTML", color: "bg-html" },
       { id: 1, name: "CSS", color: "bg-blue" },
       { id: 2, name: "JavaScript", color: "bg-yellow" },
       { id: 3, name: "jQuery", color: "bg-blue" },
@@ -165,7 +165,7 @@ export const projects = [
     name: "New tab Chrome extension",
     desc: "Расширение к Chrome с прямым поиском в YouTube и Google, настраиваемым избранным, а также небольшим виджетом погоды.",
     stack: [
-      { id: 0, name: "HTML", color: "bg-yellow" },
+      { id: 0, name: "HTML", color: "bg-html" },
       { id: 1, name: "CSS", color: "bg-blue" },
       { id: 2, name: "JavaScript", color: "bg-yellow" },
       { id: 3, name: "React", color: "bg-react-blue" },
@@ -189,7 +189,7 @@ export const projects = [
     name: "Cadence Assistant",
     desc: "Небольшой инструмент, помогающий поддерживать заданный ритм при кардиотренировках.",
     stack: [
-      { id: 0, name: "HTML", color: "bg-yellow" },
+      { id: 0, name: "HTML", color: "bg-html" },
       { id: 1, name: "CSS", color: "bg-blue" },
       { id: 2, name: "JavaScript", color: "bg-yellow" },
       { id: 3, name: "React", color: "bg-react-blue" },

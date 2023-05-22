@@ -42,31 +42,35 @@
 
 // Colors
 .blue {
-  color: #3f5aa8;
+  color: $colorCSS;
 }
 
 .react-blue {
-  color: #6ccef0;
+  color: $colorReact;
 }
 
 .yellow {
-  color: #d5ba33;
+  color: $colorJS;
 }
 
 .orange {
-  color: #e34d27;
+  color: $colorSql;
+}
+
+.orangeHtml {
+  color: $colorHtml;
 }
 
 .violet {
-  color: #cd6799;
+  color: $colorCSharp;
 }
 
 .python {
-  color: #4584b6;
+  color: $colorPython;
 }
 
 .linkedinBlue {
-  color: #0a66c2;
+  color: $colorLinkedin;
 }
 
 .fa-file-pdf {
