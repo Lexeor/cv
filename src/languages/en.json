@@ -18,5 +18,8 @@
   "linksHeader": "Links",
   "referencesHeader": "References",
   "graduationDate": "Graduated:",
-  "usedStack": "Used stack:"
+  "usedStack": "Used stack:",
+  "goalHeader": "Goal",
+  "solutionHeader": "Solution",
+  "visualizationHeader": "Vizualization"
 }

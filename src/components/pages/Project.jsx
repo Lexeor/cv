@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Text, LanguageContext } from "../../contexts/LanguageContext";
 import { Link } from "react-router-dom";
-import { projects } from "../../data/data";
+import { data as dataRu } from "../../data/data-ru";
+import { data as dataEn } from "../../data/data-en";
 import ImageGallery from "react-image-gallery";
 import StackPill from "../StackPill";
 
 function Project(props) {
+  const { userLanguage } = useContext(LanguageContext);
+  const projects = userLanguage === "ru" ? dataRu.projects : dataEn.projects;
   const currentProject = projects[props.projectId];
 
   const images = currentProject.images.map((image) => {
@@ -54,14 +58,22 @@ function Project(props) {
         )}
       </div>
       <div className="project-content">
-        <h2>Задача</h2>
+        <h2>
+          <Text tid="goalHeader" />
+        </h2>
         <div>{goalRender}</div>
-        <h2>Решение</h2>
+        <h2>
+          <Text tid="solutionHeader" />
+        </h2>
         <div>{solutionRender}</div>
-        <h2>Использованный стек</h2>
+        <h2>
+          <Text tid="usedStack" />
+        </h2>
         <div className="stack-wrapper">{stackRender}</div>
       </div>
-      <h2>Визуализация</h2>
+      <h2>
+        <Text tid="visualizationHeader" />
+      </h2>
       <div className="proj-image-area">
         <ImageGallery
           items={images}

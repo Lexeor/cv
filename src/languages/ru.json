@@ -18,5 +18,8 @@
   "linksHeader": "Ссылки",
   "referencesHeader": "Рекомендации",
   "graduationDate": "Дата окончания:",
-  "usedStack": "Использованный стек:"
+  "usedStack": "Использованный стек:",
+  "goalHeader": "Задача",
+  "solutionHeader": "Решение",
+  "visualizationHeader": "Визуализация"
 }

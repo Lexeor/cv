@@ -3,39 +3,37 @@ import Card from "../Card";
 import CertCard from "../CertCard";
 import ProjectCard from "../ProjectCard";
 import RecommendationCard from "../RecommendationCard";
-import {
-  skills,
-  certifications,
-  links,
-  projects,
-  references,
-} from "../../data/data";
+import { data as dataRu } from "../../data/data-ru";
+import { data as dataEn } from "../../data/data-en";
 import { Text, LanguageContext } from "../../contexts/LanguageContext";
 
 function Home(props) {
-  const { dictionary } = useContext(LanguageContext);
+  const { userLanguage } = useContext(LanguageContext);
+  const data = userLanguage === "ru" ? dataRu : dataEn;
 
-  const primarySkillsRender = skills.primary.map((item) => {
+  console.log(data);
+
+  const primarySkillsRender = data.skills.primary.map((item) => {
     return <Card key={item.id} item={item} />;
   });
 
-  const secondarySkillsRender = skills.secondary.map((item) => {
+  const secondarySkillsRender = data.skills.secondary.map((item) => {
     return <Card key={item.id} item={item} />;
   });
 
-  const dictionarySkillsRender = skills.third.map((item) => {
+  const dictionarySkillsRender = data.skills.third.map((item) => {
     return <Card key={item.id} item={item} />;
   });
 
-  const linksRender = links.map((item) => {
+  const linksRender = data.links.map((item) => {
     return <Card key={item.id} item={item} />;
   });
 
-  const certificationsRender = certifications.map((item) => {
+  const certificationsRender = data.certifications.map((item) => {
     return <CertCard key={item.id} item={item} />;
   });
 
-  const projectsRender = projects.map((item) => {
+  const projectsRender = data.projects.map((item) => {
     return (
       <ProjectCard
         key={item.id}
@@ -45,7 +43,7 @@ function Home(props) {
     );
   });
 
-  const recommendationsRender = references.map((item) => {
+  const recommendationsRender = data.references.map((item) => {
     return <RecommendationCard key={item.id} item={item} sideBar={false} />;
   });
 
