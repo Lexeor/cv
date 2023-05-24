@@ -11,8 +11,6 @@ function Home(props) {
   const { userLanguage } = useContext(LanguageContext);
   const data = userLanguage === "ru" ? dataRu : dataEn;
 
-  console.log(data);
-
   const primarySkillsRender = data.skills.primary.map((item) => {
     return <Card key={item.id} item={item} />;
   });
