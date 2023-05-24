@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "../Card";
 import CertCard from "../CertCard";
 import ProjectCard from "../ProjectCard";
@@ -10,8 +10,11 @@ import {
   projects,
   references,
 } from "../../data/data";
+import { Text, LanguageContext } from "../../contexts/LanguageContext";
 
 function Home(props) {
+  const { dictionary } = useContext(LanguageContext);
+
   const primarySkillsRender = skills.primary.map((item) => {
     return <Card key={item.id} item={item} />;
   });
@@ -49,43 +52,58 @@ function Home(props) {
   return (
     <div className="content">
       <section>
-        <h1>Привет!</h1>
+        <h1>
+          <Text tid="helloHeader" />
+        </h1>
         <p>
-          Меня зовут Саша, больше 10 лет я работал менеджером по IT
-          инфраструктуре в компании Sandvik и мне всегда нравилось
-          автоматизировать свою работу, разрабатывая скрипты и веб-приложения. В
-          один момент я подумал, почему бы не сделать это своей профессией, и
-          вот мы здесь :)
+          <Text tid="aboutMe1" />
         </p>
         <p>
-          Программированием я увлекаюсь с детства, но серьезно применять его в
-          своей работе начал лет 5 назад и не планирую останавливаться!
+          <Text tid="aboutMe2" />
         </p>
       </section>
       <section>
-        <h1>Скиллы</h1>
-        <h2>Основные</h2>
+        <h1>
+          <Text tid="skillsHeader" />
+        </h1>
+        <h2>
+          <Text tid="skillsSubheaderPrimary" />
+        </h2>
         <div className="cards-wrapper">{primarySkillsRender}</div>
-        <h2>Дополнительные</h2>
+        <h2>
+          <Text tid="skillsSubheaderSecondary" />
+        </h2>
         <div className="cards-wrapper">{secondarySkillsRender}</div>
-        <h2>Разберусь "со словарём"</h2>
+        <h2>
+          <Text tid="skillsSubheaderThird" />
+        </h2>
         <div className="cards-wrapper">{dictionarySkillsRender}</div>
-        <p>И всегда буду рад научиться чему-то новому.</p>
+        <p>
+          <Text tid="skillsPhrase" />
+        </p>
       </section>
       <section>
-        <h1 className="no-print">Проекты</h1>
+        <h1 className="no-print">
+          <Text tid="projectsHeader" />
+        </h1>
         <div className="projects-wrapper no-print">{projectsRender}</div>
       </section>
       <section>
-        <h1>Образование</h1>
+        <h1>
+          <Text tid="educationHeader" />
+        </h1>
         <div className="cards-wrapper">{certificationsRender}</div>
       </section>
       <section>
-        <h1 className="no-print">Ссылки</h1>
+        <h1 className="no-print">
+          <Text tid="linksHeader" />
+        </h1>
         <div className="cards-wrapper no-print">{linksRender}</div>
       </section>
       <section>
-        <h1 className="no-print">Рекомендации</h1>
+        <h1 className="no-print">
+          <Text tid="referencesHeader" />
+        </h1>
         <div className="cards-wrapper no-print">{recommendationsRender}</div>
       </section>
     </div>

@@ -1,0 +1,21 @@
+{
+  "firstName": "Alexander",
+  "lastName": "Tarasov",
+  "contactMe": "Contact me",
+  "contacts": "Contacts",
+  "seeOnline": "Website",
+  "print": "Print CV",
+  "helloHeader": "Hello!",
+  "aboutMe1": "My name is Alex, I've worked as an IT infrastructure manager for Sandvik for over 10 years and I've always liked automating my work by developing scripts and web applications. At one point I thought why not make it my profession, and here we are :)",
+  "aboutMe2": "I've been fond of programming since childhood, started using it seriously in my work about 5 years ago and don't plan to stop!",
+  "skillsHeader": "Skills",
+  "skillsSubheaderPrimary": "Primary",
+  "skillsSubheaderSecondary": "Secondary",
+  "skillsSubheaderThird": "I'll deal with the dictionary",
+  "skillsPhrase": "And I'm always happy to learn something new.",
+  "projectsHeader": "Projects",
+  "educationHeader": "Education",
+  "linksHeader": "Links",
+  "referencesHeader": "References",
+  "graduationDate": "Graduated:"
+}

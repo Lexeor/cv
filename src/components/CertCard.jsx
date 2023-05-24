@@ -1,4 +1,5 @@
 import React from "react";
+import { Text } from "../contexts/LanguageContext";
 
 function CertCard(props) {
   return (
@@ -8,7 +9,9 @@ function CertCard(props) {
         <div className="cert-card-content">
           <h2>{props.item.name}</h2>
           <h3>{props.item.specialization}</h3>
-          <span>Дата окончания: {props.item.graduationDate}</span>
+          <span>
+            <Text tid="graduationDate" /> {props.item.graduationDate}
+          </span>
         </div>
       </div>
       <a

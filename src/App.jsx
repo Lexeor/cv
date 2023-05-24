@@ -7,6 +7,8 @@ import Home from "./components/pages/Home";
 import Project from "./components/pages/Project";
 import ScrollToTop from "./components/ScrollToTop";
 
+import { LanguageContextProvider } from "./contexts/LanguageContext";
+
 function App() {
   const componentRef = useRef(null);
   const [projectId, setProjectId] = useState(0);
@@ -25,18 +27,20 @@ function App() {
     <HashRouter>
       <ScrollToTop />
 
-      <div className="App" ref={componentRef}>
-        <div className="container">
-          <InfoBar handlePrint={handlePrint} />
-          <Routes>
-            <Route index element={<Home setProjectId={setProjectId} />} />
-            <Route
-              path="/project"
-              element={<Project projectId={projectId} />}
-            />
-          </Routes>
+      <LanguageContextProvider>
+        <div className="App" ref={componentRef}>
+          <div className="container">
+            <InfoBar handlePrint={handlePrint} />
+            <Routes>
+              <Route index element={<Home setProjectId={setProjectId} />} />
+              <Route
+                path="/project"
+                element={<Project projectId={projectId} />}
+              />
+            </Routes>
+          </div>
         </div>
-      </div>
+      </LanguageContextProvider>
     </HashRouter>
   );
 }
