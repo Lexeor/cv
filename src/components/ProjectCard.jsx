@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import StackPill from "./StackPill";
+import { Text } from "../contexts/LanguageContext";
 
 function ProjectCard(props) {
   const stackRender = props.item.stack.map((item) => {
@@ -21,7 +22,9 @@ function ProjectCard(props) {
           <p>{props.item.desc}</p>
         </div>
         <div className="filler"></div>
-        <span>Использованный стек:</span>
+        <span>
+          <Text tid="usedStack" />
+        </span>
         <div className="stack-wrapper">{stackRender}</div>
       </Link>
     </div>

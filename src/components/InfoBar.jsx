@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import { references } from "../data/data";
 import RecommendationCard from "./RecommendationCard";
 import QRCode from "react-qr-code";
 import { isMobile } from "react-device-detect";
-import { Text } from "../contexts/LanguageContext";
+import { Text, LanguageContext } from "../contexts/LanguageContext";
 
 function InfoBar(props) {
   const location = useLocation();
+  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
 
   const recommendationsRender = references.map((item) => {
     return <RecommendationCard key={item.id} item={item} sideBar={true} />;
   });
+
+  const switcherClass = `slider round ${userLanguage}`;
 
   return (
     <div className="info-bar">
@@ -29,6 +32,17 @@ function InfoBar(props) {
           <h3>React Frontend Developer</h3>
         </div>
       </div>
+      <label class="language-switcher">
+        <input
+          type="checkbox"
+          onClick={() =>
+            userLanguageChange(userLanguage === "ru" ? "en" : "ru")
+          }
+        />
+        <span class={switcherClass}></span>
+        <span class="select-en"></span>
+        <span class="select-fr"></span>
+      </label>
       <div className="contacts">
         <h3>
           <Text tid="contactMe" />

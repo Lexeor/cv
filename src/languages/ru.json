@@ -3,7 +3,7 @@
   "lastName": "Тарасов",
   "contactMe": "Связаться со мной",
   "contacts": "Контакты",
-  "seeOnline": "Веб=версия",
+  "seeOnline": "Веб-версия",
   "print": "Распечатать",
   "helloHeader": "Привет!",
   "aboutMe1": "Меня зовут Саша, больше 10 лет я работал менеджером по IT инфраструктуре в компании Sandvik и мне всегда нравилось автоматизировать свою работу, разрабатывая скрипты и веб-приложения. В один момент я подумал, почему бы не сделать это своей профессией, и вот мы здесь :)",
@@ -11,11 +11,12 @@
   "skillsHeader": "Скиллы",
   "skillsSubheaderPrimary": "Основные",
   "skillsSubheaderSecondary": "Дополнительные",
-  "skillsSubheaderThird": "Разберусь со словарём",
+  "skillsSubheaderThird": "Разберусь \"со словарём\"",
   "skillsPhrase": "И всегда буду рад научиться чему-то новому.",
   "projectsHeader": "Проекты",
   "educationHeader": "Образование",
   "linksHeader": "Ссылки",
   "referencesHeader": "Рекомендации",
-  "graduationDate": "Дата окончания:"
+  "graduationDate": "Дата окончания:",
+  "usedStack": "Использованный стек:"
 }
