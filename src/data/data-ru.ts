@@ -12,11 +12,16 @@ export const data = {
         icon: "fa-brands fa-square-js",
         color: "yellow",
       },
-      { id: 2, name: "HTML", icon: "fa-brands fa-html5", color: "orangeHtml" },
-      { id: 3, name: "CSS", icon: "fa-brands fa-css3", color: "blue" },
-      { id: 4, name: "Sass", icon: "fa-brands fa-sass", color: "violet" },
-      { id: 5, name: "React", icon: "fa-brands fa-react", color: "react-blue" },
-      { id: 6, name: "git", svg: "git" },
+      {
+        id: 2,
+        name: "TypeScript",
+        svg: "typescript",
+      },
+      { id: 3, name: "HTML", icon: "fa-brands fa-html5", color: "orangeHtml" },
+      { id: 4, name: "CSS", icon: "fa-brands fa-css3", color: "blue" },
+      { id: 5, name: "Sass", icon: "fa-brands fa-sass", color: "violet" },
+      { id: 6, name: "React", icon: "fa-brands fa-react", color: "react-blue" },
+      { id: 7, name: "git", svg: "git" },
     ],
     secondary: [
       {
