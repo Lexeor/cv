@@ -9,8 +9,7 @@ export const data = {
       {
         id: 1,
         name: "JavaScript",
-        icon: "fa-brands fa-square-js",
-        color: "yellow",
+        svg: "javascript",
       },
       {
         id: 2,
