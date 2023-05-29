@@ -1,23 +1,31 @@
 import React, { useContext } from "react";
 import { useLocation } from "react-router-dom";
-import { data as dataRu } from "../data/data-ru";
-import { data as dataEn } from "../data/data-en";
 import RecommendationCard from "./RecommendationCard";
 import QRCode from "react-qr-code";
 import { isMobile } from "react-device-detect";
-import { Text, LanguageContext } from "../contexts/LanguageContext";
+import { LangContext } from "../contexts/LangContext";
 
-function InfoBar(props) {
+import { data as dataRu } from "../data/data-ru";
+import { data as dataEn } from "../data/data-en";
+
+type InfoBarProps = {
+  handlePrint: () => void;
+  translate: (key: string) => string;
+};
+
+function InfoBar({ translate, handlePrint }: InfoBarProps) {
   const location = useLocation();
-  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
-  const references =
-    userLanguage === "ru" ? dataRu.references : dataEn.references;
+  const {
+    state: { language },
+    dispatch: { setLanguage },
+  } = useContext(LangContext);
+  const references = language === "ru" ? dataRu.references : dataEn.references;
 
   const recommendationsRender = references.map((item) => {
     return <RecommendationCard key={item.id} item={item} sideBar={true} />;
   });
 
-  const switcherClass = `slider round ${userLanguage}`;
+  const switcherClass = `slider round ${language}`;
 
   return (
     <div className="info-bar">
@@ -26,30 +34,22 @@ function InfoBar(props) {
           <div className="img-area"></div>
         </div>
         <div className="info-bar-column">
-          <h2>
-            <Text tid="firstName" />
-          </h2>
-          <h1>
-            <Text tid="lastName" />
-          </h1>
+          <h2>{translate("firstName")}</h2>
+          <h1>{translate("lastName")}</h1>
           <h3>React Frontend Developer</h3>
         </div>
       </div>
       <label className="language-switcher no-print">
         <input
           type="checkbox"
-          onClick={() =>
-            userLanguageChange(userLanguage === "ru" ? "en" : "ru")
-          }
+          onClick={() => setLanguage(language === "ru" ? "en" : "ru")}
         />
         <span className={switcherClass}></span>
         <span className="select-en"></span>
         <span className="select-ru"></span>
       </label>
       <div className="contacts">
-        <h3>
-          <Text tid="contactMe" />
-        </h3>
+        <h3>{translate("contactMe")}</h3>
         <div className="contacts-line">
           <a href="tg://resolve?domain=lexeor">
             <i className="fa-brands fa-telegram"></i>
@@ -67,17 +67,13 @@ function InfoBar(props) {
         </div>
       </div>
       {location.pathname === "/" && !isMobile && (
-        <button className="btn-print" onClick={props.handlePrint}>
+        <button className="btn-print" onClick={handlePrint}>
           <i className="fa-solid fa-print"></i>
-          <span>
-            <Text tid="print" />
-          </span>
+          <span>{translate("print")}</span>
         </button>
       )}
       <div className="contacts-print">
-        <h1 className="h-print">
-          <Text tid="contacts" />
-        </h1>
+        <h1 className="h-print">{translate("contacts")}</h1>
         <div className="contacts-line">
           <i className="fa-brands fa-telegram"></i>
           <span>@Lexeor</span>
@@ -92,15 +88,11 @@ function InfoBar(props) {
         </div>
       </div>
       <div className="references-print">
-        <h1 className="h-print">
-          <Text tid="referencesHeader" />
-        </h1>
+        <h1 className="h-print">{translate("referencesHeader")}</h1>
         {recommendationsRender}
       </div>
       <div className="contacts-print">
-        <h1 className="h-print">
-          <Text tid="seeOnline" />
-        </h1>
+        <h1 className="h-print">{translate("seeOnline")}</h1>
         <QRCode
           value="https://lexeor.github.io/cv/"
           className="h-print"
