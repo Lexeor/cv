@@ -11,6 +11,10 @@ function LanguageContextProvider({ children }) {
   const defaultLanguage = window.localStorage.getItem("rcml-lang");
   const [userLanguage, setUserLanguage] = useState(defaultLanguage || "en");
 
+  // TODO
+  // var userLang = navigator.language || navigator.userLanguage;
+  // alert ("The language is: " + userLang);
+
   const userLanguageChange = (selected) => {
     const newLanguage = languageOptions[selected] ? selected : "en";
     setUserLanguage(newLanguage);
