@@ -1,7 +1,5 @@
-import { useContext } from "react";
 import { Link } from "react-router-dom";
 import StackPill from "./StackPill";
-import { LangContext } from "../contexts/LangContext";
 
 type StackItemType = {
   id: number;
