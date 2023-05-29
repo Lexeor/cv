@@ -4,7 +4,7 @@ import { useReactToPrint } from "react-to-print";
 
 import InfoBar from "./components/InfoBar";
 import Home from "./components/pages/Home";
-// import Project from "./components/pages/Project";
+import Project from "./components/pages/Project";
 import ScrollToTop from "./components/ScrollToTop";
 
 import { LangContext } from "./contexts/LangContext";
@@ -40,10 +40,10 @@ function App() {
                 <Home setProjectId={setProjectId} translate={translate} />
               }
             />
-            {/* <Route
+            <Route
               path="/project"
-              element={<Project projectId={projectId} />}
-            /> */}
+              element={<Project projectId={projectId} translate={translate} />}
+            />
           </Routes>
         </div>
       </div>

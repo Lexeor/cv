@@ -1,15 +1,22 @@
 import React, { useContext } from "react";
-import { Text, LanguageContext } from "../../contexts/LanguageContext";
+import { LangContext } from "../../contexts/LangContext";
 import { Link } from "react-router-dom";
 import { data as dataRu } from "../../data/data-ru";
 import { data as dataEn } from "../../data/data-en";
 import ImageGallery from "react-image-gallery";
 import StackPill from "../StackPill";
 
-function Project(props) {
-  const { userLanguage } = useContext(LanguageContext);
-  const projects = userLanguage === "ru" ? dataRu.projects : dataEn.projects;
-  const currentProject = projects[props.projectId];
+type ProjectProps = {
+  projectId: number;
+  translate: (key: string) => string;
+};
+
+function Project({ projectId, translate }: ProjectProps) {
+  const {
+    state: { language },
+  } = useContext(LangContext);
+  const projects = language === "ru" ? dataRu.projects : dataEn.projects;
+  const currentProject = projects[projectId];
 
   const images = currentProject.images.map((image) => {
     return { original: image };
@@ -58,22 +65,14 @@ function Project(props) {
         )}
       </div>
       <div className="project-content">
-        <h2>
-          <Text tid="goalHeader" />
-        </h2>
+        <h2>{translate("goalHeader")}</h2>
         <div>{goalRender}</div>
-        <h2>
-          <Text tid="solutionHeader" />
-        </h2>
+        <h2>{translate("solutionHeader")}</h2>
         <div>{solutionRender}</div>
-        <h2>
-          <Text tid="usedStack" />
-        </h2>
+        <h2>{translate("usedStack")}</h2>
         <div className="stack-wrapper">{stackRender}</div>
       </div>
-      <h2>
-        <Text tid="visualizationHeader" />
-      </h2>
+      <h2>{translate("visualizationHeader")}</h2>
       <div className="proj-image-area">
         <ImageGallery
           items={images}
