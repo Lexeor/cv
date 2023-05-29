@@ -33,13 +33,13 @@ function App() {
       <div className="App" ref={componentRef}>
         <div className="container">
           <InfoBar handlePrint={handlePrint} translate={translate} />
-          {/* <Routes>
-              <Route index element={<Home setProjectId={setProjectId} />} />
-              <Route
-                path="/project"
-                element={<Project projectId={projectId} />}
-              />
-            </Routes> */}
+          <Routes>
+            <Route index element={<Home setProjectId={setProjectId} />} />
+            {/* <Route
+              path="/project"
+              element={<Project projectId={projectId} />}
+            /> */}
+          </Routes>
         </div>
       </div>
     </HashRouter>

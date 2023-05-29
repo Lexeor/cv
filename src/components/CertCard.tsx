@@ -1,7 +1,23 @@
-import React from "react";
-import { Text } from "../contexts/LanguageContext";
+import React, { useContext } from "react";
+import { LangContext } from "../contexts/LangContext";
 
-function CertCard(props) {
+type CartCardProps = {
+  item: {
+    id: number;
+    logo: string;
+    name: string;
+    specialization: string;
+    graduationDate: string;
+    url: string;
+  };
+  translate: (key: string) => string;
+};
+
+function CertCard(props: CartCardProps) {
+  const {
+    dispatch: { translate },
+  } = useContext(LangContext);
+
   return (
     <div className="cert-card">
       <div className="cert-card-row">
@@ -10,7 +26,7 @@ function CertCard(props) {
           <h2>{props.item.name}</h2>
           <h3>{props.item.specialization}</h3>
           <span>
-            <Text tid="graduationDate" /> {props.item.graduationDate}
+            {translate("graduationDate")} {props.item.graduationDate}
           </span>
         </div>
       </div>
