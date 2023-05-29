@@ -3,7 +3,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import { useReactToPrint } from "react-to-print";
 
 import InfoBar from "./components/InfoBar";
-// import Home from "./components/pages/Home";
+import Home from "./components/pages/Home";
 // import Project from "./components/pages/Project";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -34,7 +34,12 @@ function App() {
         <div className="container">
           <InfoBar handlePrint={handlePrint} translate={translate} />
           <Routes>
-            <Route index element={<Home setProjectId={setProjectId} />} />
+            <Route
+              index
+              element={
+                <Home setProjectId={setProjectId} translate={translate} />
+              }
+            />
             {/* <Route
               path="/project"
               element={<Project projectId={projectId} />}

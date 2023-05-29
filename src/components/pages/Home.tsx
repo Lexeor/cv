@@ -1,15 +1,22 @@
 import React, { useContext } from "react";
 import Card from "../Card";
 import CertCard from "../CertCard";
-import ProjectCard from "../ProjectCard";
+// import ProjectCard from "../ProjectCard";
 import RecommendationCard from "../RecommendationCard";
 import { data as dataRu } from "../../data/data-ru";
 import { data as dataEn } from "../../data/data-en";
-import { Text, LanguageContext } from "../../contexts/LanguageContext";
+import { LangContext } from "../../contexts/LangContext";
 
-function Home(props) {
-  const { userLanguage } = useContext(LanguageContext);
-  const data = userLanguage === "ru" ? dataRu : dataEn;
+type HomeProps = {
+  setProjectId: (id: number) => void;
+  translate: (key: string) => string;
+};
+
+function Home({ translate, setProjectId }: HomeProps) {
+  const {
+    state: { language },
+  } = useContext(LangContext);
+  const data = language === "ru" ? dataRu : dataEn;
 
   const primarySkillsRender = data.skills.primary.map((item) => {
     return <Card key={item.id} item={item} />;
@@ -28,16 +35,17 @@ function Home(props) {
   });
 
   const certificationsRender = data.certifications.map((item) => {
-    return <CertCard key={item.id} item={item} />;
+    return <CertCard key={item.id} item={item} translate={translate} />;
   });
 
   const projectsRender = data.projects.map((item) => {
     return (
-      <ProjectCard
-        key={item.id}
-        item={item}
-        setProjectId={props.setProjectId}
-      />
+      <div></div>
+      // <ProjectCard
+      //   key={item.id}
+      //   item={item}
+      //   setProjectId={props.setProjectId}
+      // />
     );
   });
 
@@ -48,58 +56,34 @@ function Home(props) {
   return (
     <div className="content">
       <section>
-        <h1>
-          <Text tid="helloHeader" />
-        </h1>
-        <p>
-          <Text tid="aboutMe1" />
-        </p>
-        <p>
-          <Text tid="aboutMe2" />
-        </p>
+        <h1>{translate("helloHeader")}</h1>
+        <p>{translate("aboutMe1")}</p>
+        <p>{translate("aboutMe2")}</p>
       </section>
       <section>
-        <h1>
-          <Text tid="skillsHeader" />
-        </h1>
-        <h2>
-          <Text tid="skillsSubheaderPrimary" />
-        </h2>
+        <h1>{translate("skillsHeader")}</h1>
+        <h2>{translate("skillsSubheaderPrimary")}</h2>
         <div className="cards-wrapper">{primarySkillsRender}</div>
-        <h2>
-          <Text tid="skillsSubheaderSecondary" />
-        </h2>
+        <h2>{translate("skillsSubheaderSecondary")}</h2>
         <div className="cards-wrapper">{secondarySkillsRender}</div>
-        <h2>
-          <Text tid="skillsSubheaderThird" />
-        </h2>
+        <h2>{translate("skillsSubheaderThird")}</h2>
         <div className="cards-wrapper">{dictionarySkillsRender}</div>
-        <p>
-          <Text tid="skillsPhrase" />
-        </p>
+        <p>{translate("skillsPhrase")}</p>
       </section>
       <section>
-        <h1 className="no-print">
-          <Text tid="projectsHeader" />
-        </h1>
+        <h1 className="no-print">{translate("projectsHeader")}</h1>
         <div className="projects-wrapper no-print">{projectsRender}</div>
       </section>
       <section>
-        <h1>
-          <Text tid="educationHeader" />
-        </h1>
+        <h1>{translate("educationHeader")}</h1>
         <div className="cards-wrapper">{certificationsRender}</div>
       </section>
       <section>
-        <h1 className="no-print">
-          <Text tid="linksHeader" />
-        </h1>
+        <h1 className="no-print">{translate("linksHeader")}</h1>
         <div className="cards-wrapper no-print">{linksRender}</div>
       </section>
       <section>
-        <h1 className="no-print">
-          <Text tid="referencesHeader" />
-        </h1>
+        <h1 className="no-print">{translate("referencesHeader")}</h1>
         <div className="cards-wrapper no-print">{recommendationsRender}</div>
       </section>
     </div>

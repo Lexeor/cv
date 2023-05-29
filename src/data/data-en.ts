@@ -4,9 +4,7 @@ export const data = {
       {
         id: 0,
         name: "Googling",
-        icon: null,
         svg: "google",
-        color: null,
       },
       {
         id: 1,
@@ -18,7 +16,7 @@ export const data = {
       { id: 3, name: "CSS", icon: "fa-brands fa-css3", color: "blue" },
       { id: 4, name: "Sass", icon: "fa-brands fa-sass", color: "violet" },
       { id: 5, name: "React", icon: "fa-brands fa-react", color: "react-blue" },
-      { id: 6, name: "git", icon: null, svg: "git", color: null },
+      { id: 6, name: "git", svg: "git" },
     ],
     secondary: [
       {
@@ -30,53 +28,39 @@ export const data = {
       {
         id: 1,
         name: "C#",
-        icon: null,
         svg: "cSharp",
-        color: null,
       },
       {
         id: 2,
         name: "Python",
-        icon: null,
         svg: "python",
-        color: null,
       },
       {
         id: 3,
         name: "Photoshop",
-        icon: null,
         svg: "photoshop",
-        color: null,
       },
       {
         id: 4,
         name: "Illustrator",
-        icon: null,
         svg: "illustrator",
-        color: null,
       },
     ],
     third: [
       {
         id: 0,
         name: "Figma",
-        icon: null,
         svg: "figma",
-        color: null,
       },
       {
         id: 1,
         name: "Adobe XD",
-        icon: null,
         svg: "adobeXD",
-        color: null,
       },
       {
         id: 2,
         name: "Docker",
-        icon: null,
         svg: "docker",
-        color: null,
       },
     ],
   },
