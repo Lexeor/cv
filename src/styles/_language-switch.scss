@@ -36,15 +36,15 @@ $height: 24px;
   .select-ru,
   .select-en {
     position: absolute;
-    font-size: #{$height / 2.5};
-    top: #{$height / 4};
+    font-size: calc($height / 2.5);
+    top: calc($height / 4);
     color: #fff;
   }
   .select-ru {
-    left: #{$height / 3.5};
+    left: calc($height / 3.5);
   }
   .select-en {
-    right: #{$height / 4};
+    right: calc($height / 4);
   }
 }
 
