@@ -1170,10 +1170,6 @@ input:checked + .slider {
   background-color: #e7e7e7;
 }
 
-input:focus + .slider {
-  box-shadow: none;
-}
-
 input:checked + .slider:before {
   transform: translateX(24px);
 }

@@ -7,7 +7,6 @@ $backgroundDark: #0342b8;
 $speed3: cubic-bezier(0.26, 0.48, 0.08, 0.9);
 
 // Size var
-// Update this value to change the language switcher size
 $height: 24px;
 
 .language-switcher {
@@ -78,10 +77,6 @@ $height: 24px;
 
 input:checked + .slider {
   background-color: $backgroundLight;
-}
-
-input:focus + .slider {
-  box-shadow: none;
 }
 
 input:checked + .slider:before {
