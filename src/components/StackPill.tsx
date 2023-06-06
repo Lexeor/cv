@@ -9,10 +9,17 @@ type StackPillProps = {
 };
 
 function StackPill({ item }: StackPillProps) {
-  const pillClass = () => {
-    return `stack-pill ${item.color}`;
+  // Class for pill circle badge
+  const circleClass = () => {
+    return `pill-circle ${item.color}`;
   };
-  return <div className={pillClass()}>{item.name}</div>;
+
+  return (
+    <div className="stack-pill">
+      <div className={circleClass()}></div>
+      <span>{item.name}</span>
+    </div>
+  );
 }
 
 export default StackPill;

@@ -521,8 +521,10 @@ h4 {
 .project-card a .filler {
   flex-grow: 1;
 }
+.project-card a .filler + span {
+  margin: 0 0 6px 12px;
+}
 .project-card span {
-  margin-left: 12px;
   color: rgb(100, 100, 100);
   font-size: 12px;
 }
@@ -539,11 +541,20 @@ h4 {
 }
 
 .stack-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   border-radius: 12px;
-  color: white;
-  padding: 3px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: black;
+  padding: 3px 8px;
   font-size: 0.7em;
   opacity: 0.9;
+}
+.stack-pill .pill-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
 .project-image {

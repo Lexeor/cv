@@ -31,10 +31,13 @@
     .filler {
       flex-grow: 1;
     }
+
+    .filler + span {
+      margin: 0 0 6px 12px;
+    }
   }
 
   span {
-    margin-left: 12px;
     color: $textSecondary;
     font-size: 12px;
   }
@@ -54,11 +57,21 @@
 }
 
 .stack-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   border-radius: 12px;
-  color: $colorWhite;
-  padding: 3px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: $colorBlack;
+  padding: 3px 8px;
   font-size: 0.7em;
   opacity: 0.9;
+
+  .pill-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
 }
 
 .project-image {
