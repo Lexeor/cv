@@ -201,7 +201,12 @@ export const data = {
     },
     {
       id: 3,
-      images: ["images/projects/tanner_1.png", "images/projects/cadence_2.gif"],
+      images: [
+        "images/projects/tanner_1.png",
+        "images/projects/tanner_2.gif",
+        "images/projects/tanner_3.png",
+        "images/projects/tanner_4.png",
+      ],
       name: "Tanner",
       desc: "Mobile web application for quick and safe tanning using the Goltis system.",
       stack: [
