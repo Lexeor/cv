@@ -200,7 +200,7 @@ export const data = {
       id: 3,
       images: ["images/projects/tanner_1.png", "images/projects/cadence_2.gif"],
       name: "Tanner",
-      desc: "Мобильное веб-приложение для загара.",
+      desc: "Мобильное веб-приложение для быстрого и безопасного загара по системе Голтиса.",
       stack: [
         { id: 0, name: "HTML", color: "bg-html" },
         { id: 1, name: "CSS", color: "bg-blue" },
@@ -210,9 +210,13 @@ export const data = {
         { id: 5, name: "React", color: "bg-react-blue" },
         { id: 6, name: "GitHub", color: "bg-black" },
       ],
-      goal: ["Создать приложение помогающее в процессе загара."],
+      goal: [
+        "Создать приложение помогающее получить быстрый и безопасный загар по системе Голтиса.",
+      ],
       solution: [
-        "- Standard metronome with training time setting. Rhythm and volume settings are available during operation.",
+        "- Таймер со звуковым оповещением о необходимости смены стороны загарания/ухода в тень.",
+        "- Автоматическое переключение стадии загарания на следующий день в зависимости от выбранного стиля.",
+        "- Текущие показатели погоды и UV индекса для выбранного в настройках города.",
       ],
       gitUrl: "https://github.com/Lexeor/tanner-reborn",
       gitPagesUrl: "https://lexeor.github.io/tanner-reborn/",

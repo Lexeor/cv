@@ -203,7 +203,7 @@ export const data = {
       id: 3,
       images: ["images/projects/tanner_1.png", "images/projects/cadence_2.gif"],
       name: "Tanner",
-      desc: "Tanning assistance mobile web-application.",
+      desc: "Mobile web application for quick and safe tanning using the Goltis system.",
       stack: [
         { id: 0, name: "HTML", color: "bg-html" },
         { id: 1, name: "CSS", color: "bg-blue" },
@@ -213,9 +213,13 @@ export const data = {
         { id: 5, name: "React", color: "bg-react-blue" },
         { id: 6, name: "GitHub", color: "bg-black" },
       ],
-      goal: ["Create an app to assist with tanning process."],
+      goal: [
+        "Create an application that helps you get a quick and safe tan using the Goltis system.",
+      ],
       solution: [
-        "- Standard metronome with training time setting. Rhythm and volume settings are available during operation.",
+        "- Timer with sound notification about the need to change the side of tanning / going into the shade.",
+        "- Automatic switching of the tanning stage for the next day depending on the selected style.",
+        "- Current weather and UV index for the city selected in the settings.",
       ],
       gitUrl: "https://github.com/Lexeor/tanner-reborn",
       gitPagesUrl: "https://lexeor.github.io/tanner-reborn/",
