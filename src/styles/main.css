@@ -45,6 +45,13 @@ h4 {
   padding: 0;
 }
 
+h1 {
+  color: #0c73fe;
+  font-weight: 400;
+  margin-bottom: 0.8em;
+  margin-top: 0.5em;
+}
+
 .info-bar {
   display: flex;
   flex-direction: column;
@@ -72,6 +79,7 @@ h4 {
 .info-bar h1,
 .info-bar h2 {
   font-family: "Inter", sans-serif;
+  color: white;
   margin: 0;
   padding: 0;
 }
@@ -246,10 +254,6 @@ h4 {
 .content h4 {
   font-weight: 400;
   margin-bottom: 0.8em;
-}
-.content h1 {
-  color: #0c73fe;
-  margin-top: 0.5em;
 }
 .content h2 {
   text-transform: uppercase;

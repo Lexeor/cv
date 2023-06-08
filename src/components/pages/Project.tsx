@@ -65,14 +65,14 @@ function Project({ projectId, translate }: ProjectProps) {
         )}
       </div>
       <div className="project-content">
-        <h2>{translate("goalHeader")}</h2>
+        <h1>{translate("goalHeader")}</h1>
         <div>{goalRender}</div>
-        <h2>{translate("solutionHeader")}</h2>
+        <h1>{translate("solutionHeader")}</h1>
         <div>{solutionRender}</div>
-        <h2>{translate("usedStack")}</h2>
+        <h1>{translate("usedStack")}</h1>
         <div className="stack-wrapper">{stackRender}</div>
       </div>
-      <h2>{translate("visualizationHeader")}</h2>
+      <h1>{translate("visualizationHeader")}</h1>
       <div className="proj-image-area">
         <ImageGallery
           items={images}
