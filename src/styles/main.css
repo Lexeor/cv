@@ -1085,6 +1085,9 @@ h1 {
 .project-main img {
   border-radius: 12px;
 }
+.project-main .stack-wrapper {
+  padding-left: 0;
+}
 
 .proj-image-area {
   width: 60%;
