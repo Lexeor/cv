@@ -1,6 +1,8 @@
 .projects-wrapper {
-  display: flex;
-  gap: 1em;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
 }
 
 .stack-wrapper {
@@ -15,7 +17,7 @@
   @include card-body;
 
   flex-grow: 1;
-  width: 48%;
+  min-width: 48%;
   padding: 0;
 
   &:hover {
@@ -134,24 +136,22 @@
   background-color: $colorTS;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
   .project-card {
-    width: 40%;
-    max-width: 49%;
+    width: 100%;
   }
 
   .projects-wrapper {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .project-card {
     width: 100%;
-    max-width: 100%;
   }
 
   .projects-wrapper {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
   }
 }
