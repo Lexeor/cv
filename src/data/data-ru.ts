@@ -196,6 +196,27 @@ export const data = {
       gitUrl: "https://github.com/Lexeor/cadence-assistant",
       gitPagesUrl: "https://lexeor.github.io/cadence-assistant/",
     },
+    {
+      id: 3,
+      images: ["images/projects/tanner_1.png", "images/projects/cadence_2.gif"],
+      name: "Tanner",
+      desc: "Мобильное веб-приложение для загара.",
+      stack: [
+        { id: 0, name: "HTML", color: "bg-html" },
+        { id: 1, name: "CSS", color: "bg-blue" },
+        { id: 2, name: "Sass", color: "bg-sass" },
+        { id: 3, name: "JavaScript", color: "bg-yellow" },
+        { id: 4, name: "TypeScript", color: "bg-typescript" },
+        { id: 5, name: "React", color: "bg-react-blue" },
+        { id: 6, name: "GitHub", color: "bg-black" },
+      ],
+      goal: ["Создать приложение помогающее в процессе загара."],
+      solution: [
+        "- Standard metronome with training time setting. Rhythm and volume settings are available during operation.",
+      ],
+      gitUrl: "https://github.com/Lexeor/tanner-reborn",
+      gitPagesUrl: "https://lexeor.github.io/tanner-reborn/",
+    },
   ],
   references: [
     {
