@@ -232,8 +232,8 @@ export const data = {
     {
       id: 4,
       images: ["images/projects/cv_1.png", "images/projects/cv_2.png"],
-      name: "CV",
-      desc: "Ах да! Этот сайт тоже входит в портфолио по очевидным причинам :)",
+      name: "CV / Portfolio site",
+      desc: "Oh yes! This site is also included in the portfolio for obvious reasons :)",
       stack: [
         { id: 0, name: "HTML", color: "bg-html" },
         { id: 1, name: "CSS", color: "bg-blue" },
@@ -244,13 +244,13 @@ export const data = {
         { id: 6, name: "GitHub", color: "bg-black" },
       ],
       goal: [
-        "Создать сайт-портфолио, т.к. мне кажется, что это лучший способ показать сразу свои скиллы.",
+        "Create a portfolio site. It seems to me that this is the best way to show my skills right away.",
       ],
       solution: [
-        "- Изначально сайт написан на JavaScript с последующей миграцией на TypeScript.",
+        "- Initially written in JavaScript with subsequent migration to TypeScript.",
         "- Adaptive design.",
-        "- Печатная форма резюме, т.к. это и правда важно для HR иметь возможность распечатать всю информацию.",
-        "- English and russian translations.",
+        "- Printable resume. It is important for HR to be able to print all the information on one sheet.",
+        "- English and Russian translations.",
         "- Deployment at Github Pages.",
       ],
       gitUrl: "https://github.com/Lexeor/cv",
