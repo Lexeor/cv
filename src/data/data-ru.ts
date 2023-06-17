@@ -20,7 +20,8 @@ export const data = {
       { id: 4, name: "CSS", icon: "fa-brands fa-css3", color: "blue" },
       { id: 5, name: "Sass", icon: "fa-brands fa-sass", color: "violet" },
       { id: 6, name: "React", icon: "fa-brands fa-react", color: "react-blue" },
-      { id: 7, name: "git", svg: "git" },
+      { id: 7, name: "REST API", svg: "rest-api" },
+      { id: 8, name: "git", svg: "git" },
     ],
     secondary: [
       {
@@ -65,6 +66,11 @@ export const data = {
         id: 2,
         name: "Docker",
         svg: "docker",
+      },
+      {
+        id: 3,
+        name: "Redux",
+        svg: "redux",
       },
     ],
   },
