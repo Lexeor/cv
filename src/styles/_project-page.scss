@@ -25,6 +25,10 @@
   h1 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
+
+    &.main-header {
+      font-weight: 500;
+    }
   }
 
   h2 {

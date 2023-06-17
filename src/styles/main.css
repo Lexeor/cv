@@ -1079,6 +1079,9 @@ h1 {
   font-size: 1.5em;
   margin-bottom: 0.5em;
 }
+.project-main h1.main-header {
+  font-weight: 500;
+}
 .project-main h2 {
   margin-bottom: 0.5em;
 }

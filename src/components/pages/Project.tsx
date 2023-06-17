@@ -36,7 +36,7 @@ function Project({ projectId, translate }: ProjectProps) {
 
   return (
     <div className="project-main">
-      <h1>Project: {currentProject.name}</h1>
+      <h1 className="main-header">{currentProject.name}</h1>
       <Link to="/" style={{ all: "unset" }}>
         <i className="ri-close-line close"></i>
       </Link>
