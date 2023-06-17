@@ -229,6 +229,37 @@ export const data = {
       gitUrl: "https://github.com/Lexeor/tanner-reborn",
       gitPagesUrl: "https://lexeor.github.io/tanner-reborn/",
     },
+    {
+      id: 4,
+      images: [
+        "images/projects/cv_1.png",
+        "images/projects/cv_2.png",
+        "images/projects/cv_3.png",
+      ],
+      name: "CV",
+      desc: "Ах да! Этот сайт тоже входит в портфолио по очевидным причинам :)",
+      stack: [
+        { id: 0, name: "HTML", color: "bg-html" },
+        { id: 1, name: "CSS", color: "bg-blue" },
+        { id: 2, name: "Sass", color: "bg-sass" },
+        { id: 3, name: "JavaScript", color: "bg-yellow" },
+        { id: 4, name: "TypeScript", color: "bg-typescript" },
+        { id: 5, name: "React", color: "bg-react-blue" },
+        { id: 6, name: "GitHub", color: "bg-black" },
+      ],
+      goal: [
+        "Создать сайт-портфолио, т.к. мне кажется, что это лучший способ показать сразу свои скиллы.",
+      ],
+      solution: [
+        "- Изначально сайт написан на JavaScript с последующей миграцией на TypeScript.",
+        "- Adaptive design.",
+        "- Печатная форма резюме, т.к. это и правда важно для HR иметь возможность распечатать всю информацию.",
+        "- English and russian translations.",
+        "- Deployment at Github Pages.",
+      ],
+      gitUrl: "https://github.com/Lexeor/cv",
+      gitPagesUrl: "https://lexeor.github.io/cv/",
+    },
   ],
 
   references: [
