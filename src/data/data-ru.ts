@@ -228,11 +228,7 @@ export const data = {
     },
     {
       id: 4,
-      images: [
-        "images/projects/cv_1.png",
-        "images/projects/cv_2.png",
-        "images/projects/cv_3.png",
-      ],
+      images: ["images/projects/cv_1.png", "images/projects/cv_2.png"],
       name: "CV",
       desc: "Ах да! Этот сайт тоже входит в портфолио по очевидным причинам :)",
       stack: [
