@@ -244,7 +244,7 @@ export const data = {
         { id: 6, name: "GitHub", color: "bg-black" },
       ],
       goal: [
-        "Create a portfolio site. It seems to me that this is the best way to show my skills right away.",
+        "Create a portfolio site. It seems to me this is the best way to show my skills right away.",
       ],
       solution: [
         "- Initially written in JavaScript with subsequent migration to TypeScript.",
