@@ -1280,6 +1280,10 @@ input:checked + .slider:before {
     background-color: #f9f9f9;
     color: black;
   }
+  .info-bar h1,
+  .info-bar h2 {
+    color: #0c73fe;
+  }
   .info-bar h3 {
     margin-bottom: 1em;
   }
