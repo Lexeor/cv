@@ -114,6 +114,13 @@ export const data = {
       color: "linkedinBlue",
       str: "alexander-tarasov-react",
     },
+    {
+      id: 2,
+      name: "LeetCode",
+      svg: "leetcode",
+      url: "https://leetcode.com/Lexeor/",
+      str: "leetcode",
+    },
   ],
 
   projects: [
