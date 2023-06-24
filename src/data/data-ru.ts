@@ -1,74 +1,7 @@
+import { data as dataEn } from "./data-en";
+
 export const data = {
-  skills: {
-    primary: [
-      {
-        id: 0,
-        name: "JavaScript",
-        svg: "javascript",
-      },
-      {
-        id: 1,
-        name: "TypeScript",
-        svg: "typescript",
-      },
-      { id: 2, name: "HTML", icon: "fa-brands fa-html5", color: "orangeHtml" },
-      { id: 3, name: "CSS", icon: "fa-brands fa-css3", color: "blue" },
-      { id: 4, name: "Sass", icon: "fa-brands fa-sass", color: "violet" },
-      { id: 5, name: "React", icon: "fa-brands fa-react", color: "react-blue" },
-      // { id: 6, name: "REST API", svg: "rest-api" },
-      { id: 7, name: "git", svg: "git" },
-    ],
-    secondary: [
-      {
-        id: 0,
-        name: "MS SQL",
-        icon: "fa-solid fa-database",
-        color: "orange",
-      },
-      {
-        id: 1,
-        name: "C#",
-        svg: "cSharp",
-      },
-      {
-        id: 2,
-        name: "Python",
-        svg: "python",
-      },
-      {
-        id: 3,
-        name: "Photoshop",
-        svg: "photoshop",
-      },
-      {
-        id: 4,
-        name: "Illustrator",
-        svg: "illustrator",
-      },
-    ],
-    third: [
-      {
-        id: 0,
-        name: "Figma",
-        svg: "figma",
-      },
-      {
-        id: 1,
-        name: "Adobe XD",
-        svg: "adobeXD",
-      },
-      {
-        id: 2,
-        name: "Docker",
-        svg: "docker",
-      },
-      {
-        id: 3,
-        name: "Redux",
-        svg: "redux",
-      },
-    ],
-  },
+  skills: dataEn.skills,
   certifications: [
     {
       id: 0,
@@ -95,24 +28,7 @@ export const data = {
       url: "files/freecodecamp_algorithms.pdf",
     },
   ],
-  links: [
-    {
-      id: 0,
-      name: "GitHub",
-      icon: "fa-brands fa-github",
-      url: "https://github.com/Lexeor",
-      color: "black",
-      str: "Lexeor",
-    },
-    {
-      id: 1,
-      name: "LinkedIn",
-      icon: "fa-brands fa-linkedin",
-      url: "https://www.linkedin.com/in/alexander-tarasov-react/",
-      color: "linkedinBlue",
-      str: "alexander-tarasov-react",
-    },
-  ],
+  links: dataEn.links,
   projects: [
     {
       id: 0,
