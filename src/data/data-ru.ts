@@ -86,6 +86,14 @@ export const data = {
       graduationDate: "08.09.2022",
       url: "files/scrimba.pdf",
     },
+    {
+      id: 2,
+      logo: "images/freecodecamp-logo.png",
+      name: "FreeCodeCamp.org",
+      specialization: "JavaScript Algorithms and Data Structures",
+      graduationDate: "22.06.2022",
+      url: "files/freecodecamp_algorithms.pdf",
+    },
   ],
   links: [
     {
