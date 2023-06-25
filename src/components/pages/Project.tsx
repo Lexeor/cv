@@ -63,6 +63,17 @@ function Project({ projectId, translate }: ProjectProps) {
             <span>GitHub Pages</span>
           </a>
         )}
+        {currentProject.serverUrl && (
+          <a
+            href={currentProject.serverUrl}
+            className="git-button green"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="ri-rocket-2-line"></i>
+            <span>Server Deploy</span>
+          </a>
+        )}
       </div>
       <div className="project-content">
         <h1>{translate("goalHeader")}</h1>

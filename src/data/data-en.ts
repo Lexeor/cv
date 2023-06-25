@@ -174,7 +174,7 @@ export const data = {
         { id: 1, name: "CSS", color: "bg-blue" },
         { id: 2, name: "JavaScript", color: "bg-yellow" },
         { id: 3, name: "React", color: "bg-react-blue" },
-        { id: 4, name: "GitHub", color: "bg-black" },
+        { id: 4, name: "Git", color: "bg-black" },
       ],
       goal: [
         "The standard New Tab page in Chrome is, of course, wonderful, but after so many years it has already become boring, which is why the idea came up to make it more customized, and at the same time practice collecting data from a third-party API. And, of course, a direct search on YouTube will save you a whole click! And with the number of clicks we make per day, it's a lifetime :)",
@@ -201,7 +201,7 @@ export const data = {
         { id: 1, name: "CSS", color: "bg-blue" },
         { id: 2, name: "JavaScript", color: "bg-yellow" },
         { id: 3, name: "React", color: "bg-react-blue" },
-        { id: 4, name: "GitHub", color: "bg-black" },
+        { id: 4, name: "Git", color: "bg-black" },
       ],
       goal: [
         "Create a rhythm machine that doesn't depend on playing music, and also has at least minimal monitoring of training progress.",
@@ -232,7 +232,7 @@ export const data = {
         { id: 3, name: "JavaScript", color: "bg-yellow" },
         { id: 4, name: "TypeScript", color: "bg-typescript" },
         { id: 5, name: "React", color: "bg-react-blue" },
-        { id: 6, name: "GitHub", color: "bg-black" },
+        { id: 6, name: "Git", color: "bg-black" },
       ],
       goal: [
         "Create an application that helps you get a quick and safe tan using the Goltis system.",
@@ -243,7 +243,7 @@ export const data = {
         "- Current weather and UV index for the city selected in the settings.",
       ],
       gitUrl: "https://github.com/Lexeor/tanner-reborn",
-      gitPagesUrl: "https://lexeor.github.io/tanner-reborn/",
+      serverUrl: "http://62.84.125.174/",
     },
     {
       id: 4,
@@ -257,7 +257,7 @@ export const data = {
         { id: 3, name: "JavaScript", color: "bg-yellow" },
         { id: 4, name: "TypeScript", color: "bg-typescript" },
         { id: 5, name: "React", color: "bg-react-blue" },
-        { id: 6, name: "GitHub", color: "bg-black" },
+        { id: 6, name: "Git", color: "bg-black" },
       ],
       goal: [
         "Create a portfolio site. It seems to me this is the best way to show my skills right away.",

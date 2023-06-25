@@ -80,7 +80,7 @@ export const data = {
         { id: 1, name: "CSS", color: "bg-blue" },
         { id: 2, name: "JavaScript", color: "bg-yellow" },
         { id: 3, name: "React", color: "bg-react-blue" },
-        { id: 4, name: "GitHub", color: "bg-black" },
+        { id: 4, name: "Git", color: "bg-black" },
       ],
       goal: [
         "Стандартная заглушка у новой старницы в Chrome, конечно, замечательная, но за столько лет уже поднадоела, потому и пришла идея сделать её более кастомизированной, а заодно потренироваться в заборе данных со стороннего API. Ну и, конечно же, прямой поиск на YouTube сэкономит целый клик! А с количеством кликов, которые мы делаем в день - это целая жизнь :)",
@@ -107,7 +107,7 @@ export const data = {
         { id: 1, name: "CSS", color: "bg-blue" },
         { id: 2, name: "JavaScript", color: "bg-yellow" },
         { id: 3, name: "React", color: "bg-react-blue" },
-        { id: 4, name: "GitHub", color: "bg-black" },
+        { id: 4, name: "Git", color: "bg-black" },
       ],
       goal: [
         "Создать ритм-машину, не зависящую от играющей музыки, а также имеющую хотя бы минимальный мониторинг прогресса тренировки.",
@@ -138,7 +138,7 @@ export const data = {
         { id: 3, name: "JavaScript", color: "bg-yellow" },
         { id: 4, name: "TypeScript", color: "bg-typescript" },
         { id: 5, name: "React", color: "bg-react-blue" },
-        { id: 6, name: "GitHub", color: "bg-black" },
+        { id: 6, name: "Git", color: "bg-black" },
       ],
       goal: [
         "Создать приложение помогающее получить быстрый и безопасный загар по системе Голтиса.",
@@ -149,7 +149,7 @@ export const data = {
         "- Текущие показатели погоды и UV индекса для выбранного в настройках города.",
       ],
       gitUrl: "https://github.com/Lexeor/tanner-reborn",
-      gitPagesUrl: "https://lexeor.github.io/tanner-reborn/",
+      serverUrl: "http://62.84.125.174/",
     },
     {
       id: 4,
@@ -163,7 +163,7 @@ export const data = {
         { id: 3, name: "JavaScript", color: "bg-yellow" },
         { id: 4, name: "TypeScript", color: "bg-typescript" },
         { id: 5, name: "React", color: "bg-react-blue" },
-        { id: 6, name: "GitHub", color: "bg-black" },
+        { id: 6, name: "Git", color: "bg-black" },
       ],
       goal: [
         "Создать сайт-портфолио. Мне кажется, что это лучший способ сразу показать свои скиллы.",
