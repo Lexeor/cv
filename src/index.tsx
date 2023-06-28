@@ -11,8 +11,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <LanguageContextProvider>
-      {/* <App /> */}
-      <PrintPage />
+      <App />
+      {/* <PrintPage /> */}
     </LanguageContextProvider>
   </React.StrictMode>
 );

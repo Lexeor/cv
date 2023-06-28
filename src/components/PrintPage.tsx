@@ -1,11 +1,11 @@
-import { useContext } from "react";
+import { useContext, forwardRef } from "react";
 
 import { data as dataRu } from "../data/data-ru";
 import { data as dataEn } from "../data/data-en";
 
 import { LangContext } from "../contexts/LangContext";
 
-const PrintPage = () => {
+const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
   const {
     state: { language },
     dispatch: { translate },
@@ -15,12 +15,16 @@ const PrintPage = () => {
   const links = dataEn.links;
 
   let renderLinks = links.map((link) => {
-    return <a href={link.url}>{link.name}</a>;
+    return (
+      <a key={link.id} href={link.url} target="_blank">
+        {link.name}
+      </a>
+    );
   });
 
   let renderReferences = references.map((ref) => {
     return (
-      <section className="section-ref">
+      <section key={ref.id} className="section-ref">
         <span>
           <strong>{ref.name}</strong> from <strong>{ref.company}</strong>
         </span>
@@ -32,7 +36,7 @@ const PrintPage = () => {
   });
 
   return (
-    <div className="container">
+    <div className="container-print" ref={compRef}>
       <div className="info-bar print">
         <div className="img-area print"></div>
         <h2>{translate("firstName")}</h2>
@@ -42,9 +46,13 @@ const PrintPage = () => {
           <h4>Details</h4>
           <p>Baku, Azerbaijan</p>
           <p>+994 (010) 531-96-32</p>
-          <a href="mailto:lexeor.ross@gmail.com">lexeor.ross@gmail.com</a>
+          <a href="mailto:lexeor.ross@gmail.com" target="_blank">
+            lexeor.ross@gmail.com
+          </a>
           <h4>{translate("linksHeader")}</h4>
-          <a href="https://lexeor.github.io/cv">Portfolio / CV</a>
+          <a href="https://lexeor.github.io/cv" target="_blank">
+            Portfolio / CV
+          </a>
           {renderLinks}
           <h4>{translate("skillsHeader")}</h4>
           <p>React</p>
@@ -80,6 +88,6 @@ const PrintPage = () => {
       </div>
     </div>
   );
-};
+});
 
 export default PrintPage;

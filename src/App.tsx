@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback, useContext } from "react";
+import { useState, useRef, useCallback, useContext, forwardRef } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { useReactToPrint } from "react-to-print";
 
@@ -6,6 +6,7 @@ import InfoBar from "./components/InfoBar";
 import Home from "./components/pages/Home";
 import Project from "./components/pages/Project";
 import ScrollToTop from "./components/ScrollToTop";
+import PrintPage from "./components/PrintPage";
 
 import { LangContext } from "./contexts/LangContext";
 
@@ -30,7 +31,7 @@ function App() {
     <HashRouter>
       <ScrollToTop />
 
-      <div className="App" ref={componentRef}>
+      <div className="App">
         <div className="container">
           <InfoBar handlePrint={handlePrint} translate={translate} />
           <Routes>
@@ -47,6 +48,7 @@ function App() {
           </Routes>
         </div>
       </div>
+      <PrintPage ref={componentRef} />
     </HashRouter>
   );
 }

@@ -1255,7 +1255,7 @@ input:checked + .slider:before {
   }
 }
 .info-bar.print {
-  color: white;
+  color: black;
   min-width: 250px;
 }
 .info-bar.print h3 {
@@ -1270,7 +1270,7 @@ input:checked + .slider:before {
   margin-bottom: 0.3em;
 }
 .info-bar.print a {
-  color: white;
+  color: black;
 }
 
 .img-area.print {
@@ -1293,6 +1293,7 @@ input:checked + .slider:before {
   margin-bottom: 0.4em;
 }
 .print-content h3 {
+  font-size: 1.1em;
   font-weight: 600;
 }
 .print-content p {
@@ -1305,6 +1306,17 @@ input:checked + .slider:before {
   margin-bottom: 0.9em;
 }
 
+.container-print {
+  display: none;
+  flex-direction: row;
+  width: 100%;
+}
+
+@media print {
+  .container-print {
+    display: flex;
+  }
+}
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
