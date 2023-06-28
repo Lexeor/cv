@@ -17,6 +17,7 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
     language === "ru" ? dataRu.certifications[0] : dataEn.certifications[0];
   const courses =
     language === "ru" ? dataRu.certifications : dataEn.certifications;
+  const employment = language === "ru" ? dataRu.employment : dataEn.employment;
 
   const renderLinks = links.map((link) => {
     return (
@@ -35,6 +36,20 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
 
         <span>{ref.position}</span>
         <span>{ref.email}</span>
+      </section>
+    );
+  });
+
+  const renderEmploymentHistory = employment.map((item) => {
+    return (
+      <section className="section-education">
+        <h3>
+          {item.position} at {item.name}
+        </h3>
+        <span className="secondary">
+          {item.from} - {item.to}
+        </span>
+        <p>{item.description}</p>
       </section>
     );
   });
@@ -107,6 +122,7 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
         <p>{translate("strengthsSubeaderText3")}</p>
         <h2>{translate("projectsHeader")}</h2>
         <h2>{translate("employmentHeader")}</h2>
+        {renderEmploymentHistory}
         <h2>{translate("educationHeader")}</h2>
         {renderEducation()}
         <h2>{translate("coursesHeader")}</h2>

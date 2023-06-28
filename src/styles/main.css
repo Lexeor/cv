@@ -1313,6 +1313,7 @@ input:checked + .slider:before {
 }
 .section-education span.secondary {
   color: rgb(100, 100, 100);
+  font-size: 0.8em;
   letter-spacing: 1px;
 }
 

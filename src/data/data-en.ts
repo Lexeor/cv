@@ -297,4 +297,14 @@ export const data = {
       email: "ifurov@yandex.ru",
     },
   ],
+
+  employment: [
+    {
+      name: "Sandvik Mining and Contsruction",
+      position: "IT Infrastructure Manager",
+      from: "Oct 2011",
+      to: "Apr 2023",
+      description: "",
+    },
+  ],
 };
