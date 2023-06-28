@@ -205,11 +205,43 @@ export const data = {
 
   employment: [
     {
+      id: 0,
       name: "Sandvik Mining and Contsruction",
       position: "IT Infrastructure Manager",
       from: "Oct 2011",
       to: "Apr 2023",
       description: "",
+    },
+  ],
+
+  projectsPrint: [
+    {
+      id: 0,
+      name: "Personal Portfolio/CV site",
+      date: "May 2023",
+      description: [
+        "Written with JavaScript and migrated to TypeScript. Responsive web design included.",
+        "Stack: React, JavaScript, TypeScript, CSS, SASS, Git",
+      ],
+    },
+    {
+      id: 1,
+      name: "Tanner Web App",
+      date: "Jun 2023",
+      description: [
+        "Tanning assistance application designed for mobile, deployed on personal server.",
+        "Weather and UV index data gathered from free API's and consolidated on backend to bypass the limit on the number of free calls.",
+        "Stack: React, JavaScript, TypeScript, CSS, SASS, Git, API",
+      ],
+    },
+    {
+      id: 2,
+      name: "Tanner Web App",
+      date: "Aug 2022",
+      description: [
+        'Educational Chrome "New Tab" extension with changeable background depending on time of day, weather widget, custom favorites and switchable searchbar for Google/Youtube.',
+        "Stack: React, JavaScript, CSS, Git",
+      ],
     },
   ],
 };

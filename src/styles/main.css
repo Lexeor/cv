@@ -1316,6 +1316,9 @@ input:checked + .slider:before {
   font-size: 0.8em;
   letter-spacing: 1px;
 }
+.section-education p {
+  margin-bottom: 2px;
+}
 
 .container-print {
   display: none;
