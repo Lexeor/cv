@@ -1302,7 +1302,7 @@ input:checked + .slider:before {
 .section-ref {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.9em;
 }
 
 @media only screen and (max-width: 600px) {

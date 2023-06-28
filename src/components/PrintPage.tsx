@@ -43,10 +43,10 @@ const PrintPage = () => {
           <p>Baku, Azerbaijan</p>
           <p>+994 (010) 531-96-32</p>
           <a href="mailto:lexeor.ross@gmail.com">lexeor.ross@gmail.com</a>
-          <h4>Links</h4>
+          <h4>{translate("linksHeader")}</h4>
           <a href="https://lexeor.github.io/cv">Portfolio / CV</a>
           {renderLinks}
-          <h4>Skills</h4>
+          <h4>{translate("skillsHeader")}</h4>
           <p>React</p>
           <p>JavaScript</p>
           <p>TypeScript</p>
@@ -56,43 +56,26 @@ const PrintPage = () => {
           <p>Git</p>
           <p>UX/UI</p>
           <p>Reponsive Design</p>
-          <h4>Languages</h4>
+          <h4>{translate("languagesHeader")}</h4>
           <p>Russian</p>
           <p>English</p>
         </div>
       </div>
       <div className="print-content">
-        <h2>Profile</h2>
-        <p>
-          For the last 12 years I have worked in the IT department of the
-          Swedish company Sandvik, where I have gone from a Service Desk
-          specialist to an IT infrastructure manager for Russia and the CIS. In
-          my work, I devoted a lot of time to automating business processes
-          using scripts and web applications, and in the end I realized that
-          these tasks are the most interesting for me. It seems to me that now
-          is a great time to change specialization.
-        </p>
-        <h2>Strengths</h2>
-        <h3>Collaborative</h3>
-        <p>
-          12 years of work experience in multicultural cross-functional teams
-          located all around the globe.
-        </p>
-        <h3>Eager to learn new skills</h3>
-        <p>
-          As a person switching his specialty I'm constantly seeking for new
-          ways to grow and expand my skills.
-        </p>
-        <h3>Result-oriented</h3>
-        <p>
-          IT Infrastructure manager position taught me to focus on the result
-          and looking for most efficient ways to achieve it.
-        </p>
-        <h2>Projects</h2>
-        <h2>Employment History</h2>
-        <h2>Education</h2>
-        <h2>Courses</h2>
-        <h2>References</h2>
+        <h2>{translate("profileHeader")}</h2>
+        <p>{translate("profileText")}</p>
+        <h2>{translate("strengthsHeader")}</h2>
+        <h3>{translate("strengthsSubeader1")}</h3>
+        <p>{translate("strengthsSubeaderText1")}</p>
+        <h3>{translate("strengthsSubeader2")}</h3>
+        <p>{translate("strengthsSubeaderText2")}</p>
+        <h3>{translate("strengthsSubeader3")}</h3>
+        <p>{translate("strengthsSubeaderText3")}</p>
+        <h2>{translate("projectsHeader")}</h2>
+        <h2>{translate("employmentHeader")}</h2>
+        <h2>{translate("educationHeader")}</h2>
+        <h2>{translate("coursesHeader")}</h2>
+        <h2>{translate("referencesHeader")}</h2>
         {renderReferences}
       </div>
     </div>
