@@ -57,10 +57,22 @@
   margin-bottom: 0.9em;
 }
 
+.section-education {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.9em;
+
+  span.secondary {
+    color: $textSecondary;
+    letter-spacing: 1px;
+  }
+}
+
 .container-print {
   display: none;
   flex-direction: row;
   width: 100%;
+  height: 100%;
 }
 
 @media print {

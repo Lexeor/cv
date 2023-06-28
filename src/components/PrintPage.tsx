@@ -13,8 +13,12 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
 
   const references = language === "ru" ? dataRu.references : dataEn.references;
   const links = dataEn.links;
+  const education =
+    language === "ru" ? dataRu.certifications[0] : dataEn.certifications[0];
+  const courses =
+    language === "ru" ? dataRu.certifications : dataEn.certifications;
 
-  let renderLinks = links.map((link) => {
+  const renderLinks = links.map((link) => {
     return (
       <a key={link.id} href={link.url} target="_blank">
         {link.name}
@@ -22,7 +26,7 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
     );
   });
 
-  let renderReferences = references.map((ref) => {
+  const renderReferences = references.map((ref) => {
     return (
       <section key={ref.id} className="section-ref">
         <span>
@@ -34,6 +38,28 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
       </section>
     );
   });
+
+  const renderEducation = () => {
+    return (
+      <section className="section-education">
+        <h3>{education.name}</h3>
+        <span>{education.specialization}</span>
+        <span className="secondary">{education.graduationDate}</span>
+      </section>
+    );
+  };
+
+  const renderCourses = courses
+    .filter((item) => item.id !== 0)
+    .map((course) => {
+      return (
+        <section className="section-education">
+          <h3>{course.specialization}</h3>
+          <span>{course.name}</span>
+          <span className="secondary">{course.graduationDate}</span>
+        </section>
+      );
+    });
 
   return (
     <div className="container-print" ref={compRef}>
@@ -82,7 +108,9 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
         <h2>{translate("projectsHeader")}</h2>
         <h2>{translate("employmentHeader")}</h2>
         <h2>{translate("educationHeader")}</h2>
+        {renderEducation()}
         <h2>{translate("coursesHeader")}</h2>
+        {renderCourses}
         <h2>{translate("referencesHeader")}</h2>
         {renderReferences}
       </div>
