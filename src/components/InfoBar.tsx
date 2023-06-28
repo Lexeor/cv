@@ -57,12 +57,12 @@ function InfoBar({ translate, handlePrint }: InfoBarProps) {
           </a>
         </div>
       </div>
-      {/* {location.pathname === "/" && !isMobile && (
+      {location.pathname === "/" && !isMobile && (
         <button className="btn-print" onClick={handlePrint}>
           <i className="fa-solid fa-print"></i>
           <span>{translate("print")}</span>
         </button>
-      )} */}
+      )}
       <div className="contacts-print">
         <h1 className="h-print">{translate("contacts")}</h1>
         <div className="contacts-line">

@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import PrintPage from "./components/PrintPage";
 import "./styles/main.css";
 import { LanguageContextProvider } from "./contexts/LangContext";
 
@@ -10,7 +11,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <LanguageContextProvider>
-      <App />
+      {/* <App /> */}
+      <PrintPage />
     </LanguageContextProvider>
   </React.StrictMode>
 );

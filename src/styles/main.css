@@ -1254,6 +1254,43 @@ input:checked + .slider:before {
     background-color: #0342b8;
   }
 }
+.info-bar.print {
+  color: white;
+}
+.info-bar.print h3 {
+  margin-bottom: 1em;
+}
+.info-bar.print h4 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+.info-bar.print a,
+.info-bar.print p {
+  margin-bottom: 0.3em;
+}
+.info-bar.print a {
+  color: white;
+}
+
+.img-area.print {
+  width: 100px;
+  height: 100px;
+}
+
+.infobar-print {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.print-content {
+  padding: 2em;
+}
+.print-content h2 {
+  font-size: 1.3em;
+  margin-bottom: 0.4em;
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
