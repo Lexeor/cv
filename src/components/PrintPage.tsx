@@ -31,7 +31,7 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
 
   const renderReferences = references.map((ref) => {
     return (
-      <section key={ref.id} className="section-ref">
+      <section key={ref.id} className="section-cv">
         <span>
           <strong>{ref.name}</strong> from <strong>{ref.company}</strong>
         </span>
@@ -44,7 +44,7 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
 
   const renderProjects = projects.map((proj) => {
     return (
-      <section key={proj.id} className="section-education">
+      <section key={proj.id} className="section-cv">
         <strong>{proj.name}</strong>
 
         <span className="secondary">{proj.date}</span>
@@ -57,10 +57,10 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
 
   const renderEmploymentHistory = employment.map((item) => {
     return (
-      <section className="section-education">
-        <h3>
-          {item.position} at {item.name}
-        </h3>
+      <section className="section-cv">
+        <span>
+          <strong>{item.position}</strong> at <strong>{item.name}</strong>
+        </span>
         <span className="secondary">
           {item.from} - {item.to}
         </span>
@@ -73,7 +73,7 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
 
   const renderEducation = () => {
     return (
-      <section className="section-education">
+      <section className="section-cv">
         <h3>{education.name}</h3>
         <span>{education.specialization}</span>
         <span className="secondary">{education.graduationDate}</span>
@@ -85,7 +85,7 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
     .filter((item) => item.id !== 0)
     .map((course) => {
       return (
-        <section className="section-education">
+        <section className="section-cv">
           <h3>{course.specialization}</h3>
           <span>{course.name}</span>
           <span className="secondary">{course.graduationDate}</span>
