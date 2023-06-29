@@ -23,7 +23,7 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
 
   const renderLinks = links.map((link) => {
     return (
-      <a key={link.id} href={link.url} target="_blank">
+      <a key={link.id} href={link.url} target="_blank" rel="noreferrer">
         {link.name}
       </a>
     );
@@ -104,11 +104,19 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
           <h4>Details</h4>
           <p>Baku, Azerbaijan</p>
           <p>+994 (010) 531-96-32</p>
-          <a href="mailto:lexeor.ross@gmail.com" target="_blank">
+          <a
+            href="mailto:lexeor.ross@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             lexeor.ross@gmail.com
           </a>
           <h4>{translate("linksHeader")}</h4>
-          <a href="https://lexeor.github.io/cv" target="_blank">
+          <a
+            href="https://lexeor.github.io/cv"
+            target="_blank"
+            rel="noreferrer"
+          >
             Portfolio / CV
           </a>
           {renderLinks}
