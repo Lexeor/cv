@@ -305,7 +305,15 @@ export const data = {
       position: "IT Infrastructure Manager",
       from: "Oct 2011",
       to: "Apr 2023",
-      description: "",
+      description: [
+        "Among other job responsibilities, I developed an internal web portal for our IT department, which included:",
+        "• Employee phone book",
+        "• IT employee time tracking system",
+        "• IT equipment inventory system (with Active Directory and SCCM integration)",
+        "• Local servers availability monitoring system",
+        "Back-end: .NET C#, MS SQL, Python",
+        "Front-end: HTML, CSS, JavaScript, jQuery, DevExtreme framework",
+      ],
     },
   ],
 
@@ -331,7 +339,7 @@ export const data = {
     },
     {
       id: 2,
-      name: "Tanner Web App",
+      name: 'Chrome "New Tab" extension',
       date: "Aug 2022",
       description: [
         'Educational Chrome "New Tab" extension with changeable background depending on time of day, weather widget, custom favorites and switchable searchbar for Google/Youtube.',

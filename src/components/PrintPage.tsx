@@ -64,7 +64,9 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
         <span className="secondary">
           {item.from} - {item.to}
         </span>
-        <p>{item.description}</p>
+        {item.description.map((line) => {
+          return <p>{line}</p>;
+        })}
       </section>
     );
   });
@@ -126,24 +128,45 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
         </div>
       </div>
       <div className="print-content">
-        <h2>{translate("profileHeader")}</h2>
+        <div className="header">
+          <h2>{translate("profileHeader")}</h2>
+          <div className="line"></div>
+        </div>
         <p>{translate("profileText")}</p>
-        <h2>{translate("strengthsHeader")}</h2>
+        <div className="header">
+          <h2>{translate("strengthsHeader")}</h2>
+          <div className="line"></div>
+        </div>
         <h3>{translate("strengthsSubeader1")}</h3>
         <p>{translate("strengthsSubeaderText1")}</p>
         <h3>{translate("strengthsSubeader2")}</h3>
         <p>{translate("strengthsSubeaderText2")}</p>
         <h3>{translate("strengthsSubeader3")}</h3>
         <p>{translate("strengthsSubeaderText3")}</p>
-        <h2>{translate("projectsHeader")}</h2>
+        <div className="header">
+          <h2>{translate("projectsHeader")}</h2>
+          <div className="line"></div>
+        </div>
         {renderProjects}
-        <h2>{translate("employmentHeader")}</h2>
+        <div className="header page-breaker">
+          <h2>{translate("employmentHeader")}</h2>
+          <div className="line"></div>
+        </div>
         {renderEmploymentHistory}
-        <h2>{translate("educationHeader")}</h2>
+        <div className="header">
+          <h2>{translate("educationHeader")}</h2>
+          <div className="line"></div>
+        </div>
         {renderEducation()}
-        <h2>{translate("coursesHeader")}</h2>
+        <div className="header">
+          <h2>{translate("coursesHeader")}</h2>
+          <div className="line"></div>
+        </div>
         {renderCourses}
-        <h2>{translate("referencesHeader")}</h2>
+        <div className="header">
+          <h2>{translate("referencesHeader")}</h2>
+          <div className="line"></div>
+        </div>
         {renderReferences}
       </div>
     </div>
