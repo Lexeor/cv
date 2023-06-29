@@ -104,17 +104,17 @@ h1 {
 
     h1,
     h2 {
-      color: $colorPrimary;
+      color: $colorBlack;
     }
 
     h3 {
       margin-bottom: 1em;
     }
-  }
-
-  .img-area {
-    border: 4px solid $colorPrimary;
-    box-shadow: inset 0 0 0 5px $colorWhite;
+    .img-area {
+      // border: 4px solid $color-black-50;
+      margin-top: 1.5em;
+      box-shadow: 0 0 0 5px $color-black-50;
+    }
   }
 
   .contacts-print,
