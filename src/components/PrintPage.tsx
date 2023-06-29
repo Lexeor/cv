@@ -11,6 +11,7 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
     dispatch: { translate },
   } = useContext(LangContext);
 
+  // Data from .ts files
   const references = language === "ru" ? dataRu.references : dataEn.references;
   const links = dataEn.links;
   const education =
@@ -21,6 +22,7 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
   const projects =
     language === "ru" ? dataRu.projectsPrint : dataEn.projectsPrint;
 
+  // Render lists
   const renderLinks = links.map((link) => {
     return (
       <a key={link.id} href={link.url} target="_blank" rel="noreferrer">
