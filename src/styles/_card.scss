@@ -42,43 +42,43 @@
 
 // Colors
 .blue {
-  color: $colorCSS;
+  color: $color-css;
 }
 
 .react-blue {
-  color: $colorReact;
+  color: $color-react;
 }
 
 .ts-blue {
-  color: $colorTS;
+  color: $color-ts;
 }
 
 .yellow {
-  color: $colorJS;
+  color: $color-js;
 }
 
 .orange {
-  color: $colorSql;
+  color: $color-sql;
 }
 
 .orangeHtml {
-  color: $colorHtml;
+  color: $color-html;
 }
 
 .violet {
-  color: $colorCSharp;
+  color: $color-csharp;
 }
 
 .python {
-  color: $colorPython;
+  color: $color-python;
 }
 
 .linkedinBlue {
-  color: $colorLinkedin;
+  color: $color-linkedin;
 }
 
 .fa-file-pdf {
-  color: $colorPDF;
+  color: $color-pdf;
 }
 
 // Certification card
@@ -123,7 +123,7 @@
   }
 
   h3 {
-    color: $textSecondary;
+    color: $text-secondary;
   }
 }
 
@@ -133,11 +133,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-left: 1px solid $colorSeparator;
+  border-left: 1px solid $color-separator;
 
   &:hover {
     cursor: pointer;
-    background-color: $colorBtnHover;
+    background-color: $color-btn-hover;
   }
 
   i {
@@ -147,7 +147,7 @@
   }
 
   span {
-    color: $colorPDF;
+    color: $color-pdf;
     font-weight: 500;
     padding: 0.5em 0.5em 0 0.5em;
   }
@@ -173,7 +173,7 @@
     }
 
     .ref-company {
-      color: $textSecondary;
+      color: $text-secondary;
     }
   }
 
@@ -181,7 +181,7 @@
     all: unset;
     padding: 0.3em;
     font-size: 24px;
-    color: $colorPrimary;
+    color: $color-primary;
 
     &:hover {
       cursor: pointer;
@@ -206,7 +206,7 @@
     flex-direction: row;
     padding: 0;
     border-left: 0;
-    border-top: 1px solid $colorSeparator;
+    border-top: 1px solid $color-separator;
 
     span {
       padding: 0;

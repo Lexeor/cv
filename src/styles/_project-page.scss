@@ -16,11 +16,11 @@
 
 .project-main {
   padding: 1em;
-  color: $colorBlack;
+  color: $color-black;
   position: relative;
   overflow: hidden;
-  border-right: 4px solid $colorPrimary;
-  background-color: $colorBackground;
+  border-right: 4px solid $color-primary;
+  background-color: $color-background;
 
   h1 {
     font-size: 1.5em;
@@ -67,7 +67,7 @@
   display: flex;
   align-items: center;
   gap: 0.8em;
-  background-color: $colorBlack;
+  background-color: $color-black;
   border-radius: 25px;
   color: $text;
   padding: 0.2em;

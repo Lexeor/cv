@@ -2,8 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i);
 
 // Variables
-$backgroundLight: #e7e7e7;
-$backgroundDark: #0342b8;
+$background-light: #e7e7e7;
+$background-dark: #0342b8;
 $speed3: cubic-bezier(0.26, 0.48, 0.08, 0.9);
 
 // Size var
@@ -56,8 +56,8 @@ $height: 24px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $backgroundLight;
-  box-shadow: inset 0 0px 3px 3px rgba($colorBlack, 0.1);
+  background-color: $background-light;
+  box-shadow: inset 0 0px 3px 3px rgba($color-black, 0.1);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -70,13 +70,13 @@ $height: 24px;
   left: 0;
   bottom: 0;
   background-color: white;
-  box-shadow: inset 0 0px 3px 3px rgba($colorBlack, 0.1);
+  box-shadow: inset 0 0px 3px 3px rgba($color-black, 0.1);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: $backgroundLight;
+  background-color: $background-light;
 }
 
 input:checked + .slider:before {
@@ -118,8 +118,8 @@ input:checked + .slider:before {
     right: 15px;
   }
   .slider {
-    background-color: $backgroundDark;
-    box-shadow: inset 0 0px 3px 3px rgba($colorBlack, 0.1);
+    background-color: $background-dark;
+    box-shadow: inset 0 0px 3px 3px rgba($color-black, 0.1);
   }
   .slider:before {
     position: absolute;
@@ -129,10 +129,10 @@ input:checked + .slider:before {
     left: 0;
     bottom: 0;
     background-color: white;
-    box-shadow: 0 3px 64px rgba($colorBlack, 0.1);
+    box-shadow: 0 3px 64px rgba($color-black, 0.1);
   }
 
   input:checked + .slider {
-    background-color: $backgroundDark;
+    background-color: $background-dark;
   }
 }

@@ -1,49 +1,49 @@
 // Colors
-$colorPrimary: #0c73fe;
-$colorPrimaryShaded: #0a5cc7;
-$colorWhite: white;
-$colorGray: rgb(200, 200, 200);
-$colorBtn: #ffffff;
-$colorBtnHover: #eaeaea;
-$colorBlack: black;
+$color-primary: #0c73fe;
+$color-primaryShaded: #0a5cc7;
+$color-white: white;
+$color-gray: rgb(200, 200, 200);
+$color-btn: #ffffff;
+$color-btn-hover: #eaeaea;
+$color-black: black;
 $color-black-20: rgba(black, 0.2);
 $color-black-50: rgba(black, 0.5);
-$colorSeparator: rgba(0, 0, 0, 0.08);
-$colorBackground: #f9f9f9;
-$colorShadow: rgba(0, 0, 0, 0.04);
+$color-separator: rgba(0, 0, 0, 0.08);
+$color-background: #f9f9f9;
+$color-shadow: rgba(0, 0, 0, 0.04);
 
 // SoftwareColors
-$colorHtml: #e54f26;
-$colorCSS: #3f5aa8;
-$colorSass: #c6538c;
-$colorReact: #6ccef0;
-$colorJS: #d5ba33;
-$colorTS: #007acc;
-$colorSql: #e34d27;
-$colorCSharp: #cd6799;
-$colorPython: #4584b6;
-$colorLinkedin: #0a66c2;
-$colorPDF: rgb(175, 0, 0);
-$colorRedux: #764abc;
+$color-html: #e54f26;
+$color-css: #3f5aa8;
+$color-sass: #c6538c;
+$color-react: #6ccef0;
+$color-js: #d5ba33;
+$color-ts: #007acc;
+$color-sql: #e34d27;
+$color-csharp: #cd6799;
+$color-python: #4584b6;
+$color-linkedin: #0a66c2;
+$color-pdf: rgb(175, 0, 0);
+$color-redux: #764abc;
 
 // Text
 $text: whitesmoke;
-$textSecondary: rgb(100, 100, 100);
+$text-secondary: rgb(100, 100, 100);
 
 // Fonts
-$fontMain: "Inter", sans-serif;
-$fontHeaders: "Inter", sans-serif;
+$font-main: "Inter", sans-serif;
+$font-headers: "Inter", sans-serif;
 
 // Mixins
 
 @mixin card-body {
   display: flex;
   overflow: hidden;
-  background-color: $colorBtn;
+  background-color: $color-btn;
   border-radius: 8px;
   padding: 10px;
   transition: ease-in-out 0.2s;
-  box-shadow: 0 0 2px 2px $colorShadow;
+  box-shadow: 0 0 2px 2px $color-shadow;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */

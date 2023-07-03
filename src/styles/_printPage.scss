@@ -53,7 +53,7 @@
 
 .print-content {
   padding: 2em;
-  background-color: $colorWhite;
+  background-color: $color-white;
 
   h2 {
     font-size: 1.3em;
@@ -76,7 +76,7 @@
   margin-bottom: 0.9em;
 
   span.secondary {
-    color: $textSecondary;
+    color: $text-secondary;
     font-size: 0.8em;
     letter-spacing: 1px;
     text-transform: uppercase;
