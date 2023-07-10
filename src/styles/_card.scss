@@ -14,6 +14,7 @@
   align-items: center;
   min-width: 80px;
   min-height: 80px;
+  height: 100%;
 
   &:hover {
     scale: 1.05;
@@ -26,6 +27,7 @@
 
   span {
     font-size: 0.7em;
+    text-align: center;
   }
 
   img {

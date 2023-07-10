@@ -123,9 +123,10 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
           </a>
           {renderLinks}
           <h4>{translate("skillsHeader")}</h4>
-          <p>React</p>
           <p>JavaScript</p>
           <p>TypeScript</p>
+          <p>React</p>
+          <p>Redux Toolkit</p>
           <p>HTML</p>
           <p>CSS</p>
           <p>SASS</p>

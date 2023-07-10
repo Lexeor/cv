@@ -15,6 +15,11 @@ export const data = {
       { id: 3, name: "CSS", icon: "fa-brands fa-css3", color: "blue" },
       { id: 4, name: "Sass", icon: "fa-brands fa-sass", color: "violet" },
       { id: 5, name: "React", icon: "fa-brands fa-react", color: "react-blue" },
+      {
+        id: 6,
+        name: "Redux Toolkit",
+        svg: "redux",
+      },
       // { id: 6, name: "REST API", svg: "rest-api" },
       { id: 7, name: "git", svg: "git" },
     ],
@@ -61,11 +66,6 @@ export const data = {
         id: 2,
         name: "Docker",
         svg: "docker",
-      },
-      {
-        id: 3,
-        name: "Redux",
-        svg: "redux",
       },
     ],
   },
@@ -333,7 +333,7 @@ export const data = {
       date: "Jun 2023",
       description: [
         "Tanning assistance application designed for mobile, deployed on personal server.",
-        "Weather and UV index data gathered from free API's and consolidated on backend to bypass the limit on the number of free calls.",
+        "Weather and UV index data gathered from free API's and consolidated on API proxy to bypass the limit on the number of free calls.",
         "Stack: React, JavaScript, TypeScript, CSS, SASS, Git, API",
       ],
     },

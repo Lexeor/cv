@@ -282,7 +282,7 @@ h1 {
   overflow: hidden;
   background-color: #ffffff;
   border-radius: 8px;
-  padding: 10px;
+  padding: 5px;
   transition: ease-in-out 0.2s;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.04);
   -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
@@ -294,6 +294,7 @@ h1 {
   align-items: center;
   min-width: 80px;
   min-height: 80px;
+  height: 100%;
 }
 .skill-card:hover {
   scale: 1.05;
@@ -304,6 +305,7 @@ h1 {
 }
 .skill-card span {
   font-size: 0.7em;
+  text-align: center;
 }
 .skill-card img {
   width: 32px;
@@ -361,7 +363,7 @@ h1 {
   overflow: hidden;
   background-color: #ffffff;
   border-radius: 8px;
-  padding: 10px;
+  padding: 5px;
   transition: ease-in-out 0.2s;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.04);
   -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
@@ -433,7 +435,7 @@ h1 {
   overflow: hidden;
   background-color: #ffffff;
   border-radius: 8px;
-  padding: 10px;
+  padding: 5px;
   transition: ease-in-out 0.2s;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.04);
   -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
@@ -505,7 +507,7 @@ h1 {
   overflow: hidden;
   background-color: #ffffff;
   border-radius: 8px;
-  padding: 10px;
+  padding: 5px;
   transition: ease-in-out 0.2s;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.04);
   -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
