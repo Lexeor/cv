@@ -22,23 +22,28 @@ export const data = {
       },
       // { id: 6, name: "REST API", svg: "rest-api" },
       { id: 7, name: "git", svg: "git" },
+      {
+        id: 8,
+        name: "Docker",
+        svg: "docker",
+      },
     ],
     secondary: [
       {
         id: 0,
-        name: "MS SQL",
-        icon: "fa-solid fa-database",
-        color: "orange",
+        name: "Node.js",
+        svg: "nodejs",
       },
       {
         id: 1,
-        name: "C#",
-        svg: "cSharp",
+        name: "MongoDB",
+        svg: "mongodb",
       },
       {
         id: 2,
-        name: "Python",
-        svg: "python",
+        name: "MS SQL",
+        icon: "fa-solid fa-database",
+        color: "orange",
       },
       {
         id: 3,
@@ -61,11 +66,6 @@ export const data = {
         id: 1,
         name: "Adobe XD",
         svg: "adobeXD",
-      },
-      {
-        id: 2,
-        name: "Docker",
-        svg: "docker",
       },
     ],
   },

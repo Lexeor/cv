@@ -131,6 +131,8 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
           <p>CSS</p>
           <p>SASS</p>
           <p>Git</p>
+          <p>Docker</p>
+          <p>Node.js</p>
           <p>UX/UI</p>
           <p>Reponsive Design</p>
           <h4>{translate("languagesHeader")}</h4>
