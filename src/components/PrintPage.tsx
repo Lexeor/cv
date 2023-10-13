@@ -130,6 +130,7 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
           <p>HTML</p>
           <p>CSS</p>
           <p>SASS</p>
+          <p>REST API / Axios</p>
           <p>Git</p>
           <p>Docker</p>
           <p>Node.js</p>
