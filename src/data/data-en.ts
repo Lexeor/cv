@@ -20,10 +20,10 @@ export const data = {
         name: "Redux Toolkit",
         svg: "redux",
       },
-      // { id: 6, name: "REST API", svg: "rest-api" },
-      { id: 7, name: "git", svg: "git" },
+      { id: 7, name: "REST API", svg: "rest-api" },
+      { id: 8, name: "git", svg: "git" },
       {
-        id: 8,
+        id: 9,
         name: "Docker",
         svg: "docker",
       },
