@@ -1,4 +1,4 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 type CardType = {
   item: {
@@ -9,16 +9,42 @@ type CardType = {
     color?: string;
     url?: string;
   };
+  index: number;
 };
 
-function Card({ item }: CardType) {
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 40,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.05 * index,
+      duration: 0.1,
+      ease: "easeInOut",
+    }
+  }),
+};
+
+function Card({ item, index }: CardType) {
   const buildClass = () => {
     return `${item.icon} ${item.color}`;
   };
 
   const finalCard = item.url ? (
     <a href={item.url} target="_blank" rel="noreferrer" className="card-link">
-      <div className="skill-card">
+      <motion.div
+        className="skill-card"
+        variants={fadeInAnimationVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+        }}
+        custom={index}
+      >
         {item.icon ? (
           <i className={buildClass()}></i>
         ) : (
@@ -26,17 +52,26 @@ function Card({ item }: CardType) {
         )}
 
         <span>{item.name}</span>
-      </div>
+      </motion.div>
     </a>
   ) : (
-    <div className="skill-card">
+    <motion.div
+    className="skill-card"
+    variants={fadeInAnimationVariants}
+    initial="initial"
+    whileInView="animate"
+    viewport={{
+      once: true,
+    }}
+    custom={index}
+    >
       {item.icon ? (
         <i className={buildClass()}></i>
       ) : (
         <img src={`icons/${item.svg}.svg`} alt="icon" />
       )}
       <span>{item.name}</span>
-    </div>
+    </motion.div>
   );
   return <div>{finalCard}</div>;
 }

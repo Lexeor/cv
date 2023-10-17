@@ -18,20 +18,20 @@ function Home({ translate, setProjectId }: HomeProps) {
   } = useContext(LangContext);
   const data = language === "ru" ? dataRu : dataEn;
 
-  const primarySkillsRender = data.skills.primary.map((item) => {
-    return <Card key={item.id} item={item} />;
+  const primarySkillsRender = data.skills.primary.map((item, idx) => {
+    return <Card key={item.id} item={item} index={idx} />;
   });
 
-  const secondarySkillsRender = data.skills.secondary.map((item) => {
-    return <Card key={item.id} item={item} />;
+  const secondarySkillsRender = data.skills.secondary.map((item, idx) => {
+    return <Card key={item.id} item={item} index={idx} />;
   });
 
-  const dictionarySkillsRender = data.skills.third.map((item) => {
-    return <Card key={item.id} item={item} />;
+  const dictionarySkillsRender = data.skills.third.map((item, idx) => {
+    return <Card key={item.id} item={item} index={idx} />;
   });
 
-  const linksRender = data.links.map((item) => {
-    return <Card key={item.id} item={item} />;
+  const linksRender = data.links.map((item, idx) => {
+    return <Card key={item.id} item={item} index={idx} />;
   });
 
   const certificationsRender = data.certifications.map((item) => {
