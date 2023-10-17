@@ -1,7 +1,7 @@
 .projects-wrapper {
   display: grid;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
 }
 
@@ -9,8 +9,7 @@
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
-  padding: 8px;
-  border-top: 1px dashed $color-separator;
+  padding: 1.5em;
 }
 
 .project-card {
@@ -19,6 +18,11 @@
   flex-grow: 1;
   min-width: 48%;
   padding: 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  height: 100%;
+  min-height: 280px;
 
   &:hover {
     cursor: pointer;
@@ -31,6 +35,7 @@
     flex-direction: column;
 
     .filler {
+      min-height: 1px;
       flex-grow: 1;
     }
 
@@ -45,8 +50,13 @@
   }
 }
 
+.project-card_body {
+  display: flex;
+  flex-direction: column;
+}
+
 .project-card-content {
-  padding: 12px;
+  padding: 1.5em 1.5em 0 1.5em;
   flex-grow: 1;
 
   p {
@@ -79,9 +89,18 @@
 .project-image {
   object-fit: cover;
   overflow: hidden;
+  position: absolute;
+  bottom: -25px;
+  right: -20px;
+  width: 250px;
+  height: 100%;
+  border-radius: 6px;
+  box-shadow: -3px 3px 15px #c3c3c3;
 
   img {
-    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
   }
 }
 
@@ -136,13 +155,13 @@
   background-color: $color-ts;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .project-card {
     width: 100%;
   }
 
   .projects-wrapper {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
