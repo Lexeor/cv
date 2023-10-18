@@ -24,24 +24,29 @@ type ProjectCardProps = {
   translate: (key: string) => string;
 };
 
-export const variants = {
-  show: {
-    rotate: -3,
-    x: -10,
-    transition: {
-      ease: 'easeOut',
-      duration: 0.3
-    }
-  },
-  hide: {
-    rotate: 0,
-    x: 0,
-  }
-};
-
 function ProjectCard({ item, setProjectId, translate }: ProjectCardProps) {
   const [hovered, setHovered] = useState(false);
-  
+  const isMobile = window.innerWidth < 600;
+
+  let variants = {};
+
+  if(!isMobile) {
+    variants = {
+      show: {
+        rotate: -3,
+        x: -10,
+        transition: {
+          ease: 'easeOut',
+          duration: 0.3
+        }
+      },
+      hide: {
+        rotate: 0,
+        x: 0,
+      }
+    };
+  }
+
   const stackRender = item.stack.map((item) => {
     return <StackPill key={item.id} item={item} />;
   });

@@ -9,7 +9,7 @@
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
-  padding: 1.5em;
+  padding: 0 1.5em 1.5em 1.5em;
 }
 
 .project-card {
@@ -56,7 +56,7 @@
 }
 
 .project-card-content {
-  padding: 1.5em 1.5em 0 1.5em;
+  padding: 1.5em;
   flex-grow: 1;
 
   p {
@@ -189,5 +189,6 @@
     right: unset;
     width: 100%;
     box-shadow: unset;
+    object-fit: cover;
   }
 }
