@@ -650,7 +650,7 @@ h1 {
   background-color: #007acc;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1281px) {
   .project-card {
     width: 100%;
   }
@@ -1402,7 +1402,7 @@ input:checked + .slider:before {
 }
 @media only screen and (max-width: 600px) {
   .content h2 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 @media print {
