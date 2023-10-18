@@ -209,7 +209,7 @@ h1 {
   font-size: 1.4em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 805px) {
   .info-bar {
     flex-direction: column;
     height: 220px;
@@ -269,7 +269,7 @@ h1 {
   margin-bottom: 0em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 805px) {
   .content {
     border: 0;
   }
@@ -658,13 +658,27 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 805px) {
   .project-card {
     width: 100%;
   }
   .projects-wrapper {
     grid-template-columns: 1fr;
     gap: 1.5em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+  .project-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    bottom: unset;
+    right: unset;
+    width: 100%;
+    box-shadow: unset;
   }
 }
 .image-gallery-icon {
@@ -1376,7 +1390,7 @@ input:checked + .slider:before {
     display: flex;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 805px) {
   .container {
     flex-direction: column;
   }

@@ -165,7 +165,7 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 805px) {
   .project-card {
     width: 100%;
   }
@@ -173,5 +173,21 @@
   .projects-wrapper {
     grid-template-columns: 1fr;
     gap: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    bottom: unset;
+    right: unset;
+    width: 100%;
+    box-shadow: unset;
   }
 }
