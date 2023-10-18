@@ -50,16 +50,16 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
         <strong>{proj.name}</strong>
 
         <span className="secondary">{proj.date}</span>
-        {proj.description.map((line) => {
-          return <p>{line}</p>;
+        {proj.description.map((line, index) => {
+          return <p key={index}>{line}</p>;
         })}
       </section>
     );
   });
 
-  const renderEmploymentHistory = employment.map((item) => {
+  const renderEmploymentHistory = employment.map((item, index) => {
     return (
-      <section className="section-cv">
+      <section key={`employ-${index}`} className="section-cv">
         <span>
           <strong>{item.position}</strong> at <strong>{item.name}</strong>
         </span>
@@ -85,9 +85,9 @@ const PrintPage = forwardRef(function PrintPage(props: any, compRef: any) {
 
   const renderCourses = courses
     .filter((item) => item.id !== 0)
-    .map((course) => {
+    .map((course, index) => {
       return (
-        <section className="section-cv">
+        <section key={`course-${index}`} className="section-cv">
           <h3>{course.specialization}</h3>
           <span>{course.name}</span>
           <span className="secondary">{course.graduationDate}</span>
