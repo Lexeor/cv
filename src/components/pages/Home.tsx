@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Card from "../Card";
 import CertCard from "../CertCard";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "../ProjectCard/ProjectCard";
 import RecommendationCard from "../RecommendationCard";
 import { data as dataRu } from "../../data/data-ru";
 import { data as dataEn } from "../../data/data-en";
