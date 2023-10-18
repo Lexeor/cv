@@ -62,6 +62,10 @@ h1 {
   margin-top: 0.5em;
 }
 
+.centered {
+  text-align: center;
+}
+
 @import "./infobar";
 @import "./content";
 @import "./card";

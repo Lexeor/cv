@@ -56,6 +56,10 @@ h1 {
   margin-top: 0.5em;
 }
 
+.centered {
+  text-align: center;
+}
+
 .info-bar {
   display: flex;
   flex-direction: column;

@@ -33,9 +33,9 @@ function InfoBar({ translate, handlePrint }: InfoBarProps) {
           <div className="img-area"></div>
         </div>
         <div className="info-bar-column">
-          <h2>{translate("firstName")}</h2>
-          <h1>{translate("lastName")}</h1>
-          <h3>React Frontend Developer</h3>
+          <h2 className="centered">{translate("firstName")}</h2>
+          <h1 className="centered">{translate("lastName")}</h1>
+          <h3 className="centered">React Frontend Developer</h3>
         </div>
       </div>
       <LanguageSwitch language={language} setLanguage={setLanguage} />
