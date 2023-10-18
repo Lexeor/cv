@@ -589,7 +589,7 @@ h1 {
   right: -20px;
   width: 250px;
   height: 100%;
-  border-radius: 6px;
+  border-radius: 6px 6px 0 0;
   box-shadow: -3px 3px 15px #c3c3c3;
 }
 .project-image img {
