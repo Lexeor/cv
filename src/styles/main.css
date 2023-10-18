@@ -682,6 +682,13 @@ h1 {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .project-image img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 100% 0%;
+       object-position: 100% 0%;
+  }
 }
 .image-gallery-icon {
   color: #fff;
