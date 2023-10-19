@@ -146,6 +146,7 @@ export const data = {
       ],
       solution: [
         "To implement the project, the Payload CMS framework connected to the MongoDB database was chosen.",
+        "Developed by a team of 2 people.",
         "The following features have been introduced:",
         "- Creating and editing conferences, including the ability to mark payment and participation flags, currency and payment amount for registered participants.",
         "- Exporting conference participants into PDF, divided into those who paid and those who did not pay yet for participation.",
