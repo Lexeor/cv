@@ -1,4 +1,5 @@
-@import "./variables";
+@import './variables';
+@import './colors';
 
 // Generic
 
@@ -60,6 +61,7 @@ h1 {
   font-weight: 400;
   margin-bottom: 0.8em;
   margin-top: 0.5em;
+  font-size: 1.8em;
 }
 
 .centered {
