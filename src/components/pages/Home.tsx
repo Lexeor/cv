@@ -76,7 +76,7 @@ function Home({ translate, setProjectId }: HomeProps) {
       </section>
       <section>
         <h1>{translate("educationHeader")}</h1>
-        <div className="cards-wrapper">{certificationsRender}</div>
+        <div className="full-card-wrapper">{certificationsRender}</div>
       </section>
       <section>
         <h1 className="no-print">{translate("linksHeader")}</h1>
@@ -84,7 +84,7 @@ function Home({ translate, setProjectId }: HomeProps) {
       </section>
       <section>
         <h1 className="no-print">{translate("referencesHeader")}</h1>
-        <div className="cards-wrapper no-print">{recommendationsRender}</div>
+        <div className="full-card-wrapper no-print">{recommendationsRender}</div>
       </section>
     </div>
   );
