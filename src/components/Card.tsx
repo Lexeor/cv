@@ -33,45 +33,35 @@ function Card({ item, index }: CardType) {
     return `${item.icon} ${item.color}`;
   };
 
-  const finalCard = item.url ? (
-    <a href={item.url} target="_blank" rel="noreferrer" className="card-link">
-      <motion.div
-        className="skill-card"
-        variants={fadeInAnimationVariants}
-        initial="initial"
-        whileInView="animate"
-        viewport={{
-          once: true,
-        }}
-        custom={index}
+  const cardBody = (
+    <motion.div
+      className="skill-card"
+      variants={fadeInAnimationVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{
+        once: true,
+      }}
+      custom={index}
       >
         {item.icon ? (
           <i className={buildClass()}></i>
         ) : (
           <img src={`icons/${item.svg}.svg`} alt="icon" />
         )}
-
         <span>{item.name}</span>
-      </motion.div>
+    </motion.div>
+  )
+  
+
+  const finalCard = item.url ? (
+    <a href={item.url} target="_blank" rel="noreferrer" className="card-link">
+      {cardBody}
     </a>
   ) : (
-    <motion.div
-    className="skill-card"
-    variants={fadeInAnimationVariants}
-    initial="initial"
-    whileInView="animate"
-    viewport={{
-      once: true,
-    }}
-    custom={index}
-    >
-      {item.icon ? (
-        <i className={buildClass()}></i>
-      ) : (
-        <img src={`icons/${item.svg}.svg`} alt="icon" />
-      )}
-      <span>{item.name}</span>
-    </motion.div>
+    <>
+      {cardBody}
+    </>
   );
   return <div>{finalCard}</div>;
 }
