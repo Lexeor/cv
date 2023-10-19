@@ -88,6 +88,18 @@
   background-color: green;
 }
 
+.bg-mongodb {
+  background-color: #589636;
+}
+
+.bg-nodejs {
+  background-color: #8AC94C;
+}
+
+.bg-docker {
+  background-color: #2496ED;
+}
+
 * {
   box-sizing: border-box;
 }

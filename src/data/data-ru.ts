@@ -33,6 +33,41 @@ export const data = {
     {
       id: 0,
       images: [
+        "images/projects/payload_1.png",
+        "images/projects/payload_2.png",
+      ],
+      name: "Merchant Bot Admin",
+      desc: "Админ интерфейс для управления телеграм ботом для маркетинга IT митапов.",
+      stack: [
+        { id: 0, name: "HTML", color: "bg-html" },
+        { id: 1, name: "Sass", color: "bg-sass" },
+        { id: 2, name: "TypeScript", color: "bg-typescript" },
+        { id: 3, name: "React", color: "bg-react-blue" },
+        { id: 4, name: "NodeJS", color: "bg-nodejs" },
+        { id: 5, name: "MongoDB", color: "bg-mongodb" },
+        { id: 6, name: "Docker", color: "bg-docker" },
+        { id: 7, name: "Git", color: "bg-black" },
+      ],
+      goal: [
+        "Создать интерфейс для администраторов сервиса с возможностью создавать и редактировать записи конференций в БД, отмечать оплаты участников и видеть актуальное состояние текущих мероприятий.",
+      ],
+      solution: [
+        "Для реализации проекта был выбран фреймворк Payload CMS, подключенный к базе данных MongoDB.",
+        "Внедрены следующие возможности:",
+        "- Создание и редактирование конференций, включая возможность отмечать для записавшихся участников флаги об оплате и участии, валюту и сумму оплаты.",
+        "- Выгрузка участников конференции в PDF с разделением на оплативших и не оплативших участие.",
+        "- Создание и редактирование рассылок участникам двух типов - рассылка по времени и рассылка за выбираемое количество дней до начала конференции.",
+        "- Удобное отображение списка конференций с необходимыми администратору параметрами.",
+        "Вызовы преодолены:",
+        "- Подключение fullstack проекта к production базе MongoDB.",
+        "- Создание кастомных компонентов и API ручекб не предусмотренных фреймворком по умолчанию, но позволивших сделать интерфейс удобнее для пользователей.",
+        "- Внедрение кастомного RichText редактора текста, который бы нормально воспринимался как в админке, так и в Telegram боте.",
+      ],
+      gitUrl: "https://github.com/wizards-of-the-code/conf-admin-payload",
+    },
+    {
+      id: 1,
+      images: [
         "images/projects/itinfo_1.png",
         "images/projects/itinfo_2.png",
         "images/projects/itinfo_3.png",
@@ -66,7 +101,7 @@ export const data = {
       gitUrl: null,
     },
     {
-      id: 1,
+      id: 2,
       images: [
         "images/projects/extension_1.png",
         "images/projects/extension_2.gif",
@@ -95,7 +130,7 @@ export const data = {
       gitUrl: "https://github.com/Lexeor/ntb-extension",
     },
     {
-      id: 2,
+      id: 3,
       images: [
         "images/projects/cadence_1.png",
         "images/projects/cadence_2.gif",
@@ -122,7 +157,7 @@ export const data = {
       gitPagesUrl: "https://lexeor.github.io/cadence-assistant/",
     },
     {
-      id: 3,
+      id: 4,
       images: [
         "images/projects/tanner_1.png",
         "images/projects/tanner_2.gif",
@@ -135,10 +170,9 @@ export const data = {
         { id: 0, name: "HTML", color: "bg-html" },
         { id: 1, name: "CSS", color: "bg-blue" },
         { id: 2, name: "Sass", color: "bg-sass" },
-        { id: 3, name: "JavaScript", color: "bg-yellow" },
-        { id: 4, name: "TypeScript", color: "bg-typescript" },
-        { id: 5, name: "React", color: "bg-react-blue" },
-        { id: 6, name: "Git", color: "bg-black" },
+        { id: 3, name: "TypeScript", color: "bg-typescript" },
+        { id: 4, name: "React", color: "bg-react-blue" },
+        { id: 5, name: "Git", color: "bg-black" },
       ],
       goal: [
         "Создать приложение помогающее получить быстрый и безопасный загар по системе Голтиса.",
@@ -152,7 +186,7 @@ export const data = {
       serverUrl: "http://62.84.125.174/",
     },
     {
-      id: 4,
+      id: 5,
       images: ["images/projects/cv_1.png", "images/projects/cv_2.png"],
       name: "CV / Portfolio site",
       desc: "Ах да! Этот сайт тоже входит в портфолио по очевидным причинам :)",
@@ -160,10 +194,9 @@ export const data = {
         { id: 0, name: "HTML", color: "bg-html" },
         { id: 1, name: "CSS", color: "bg-blue" },
         { id: 2, name: "Sass", color: "bg-sass" },
-        { id: 3, name: "JavaScript", color: "bg-yellow" },
-        { id: 4, name: "TypeScript", color: "bg-typescript" },
-        { id: 5, name: "React", color: "bg-react-blue" },
-        { id: 6, name: "Git", color: "bg-black" },
+        { id: 3, name: "TypeScript", color: "bg-typescript" },
+        { id: 4, name: "React", color: "bg-react-blue" },
+        { id: 5, name: "Git", color: "bg-black" },
       ],
       goal: [
         "Создать сайт-портфолио. Мне кажется, что это лучший способ сразу показать свои скиллы.",

@@ -127,6 +127,40 @@ export const data = {
     {
       id: 0,
       images: [
+        "images/projects/payload_1.png",
+      ],
+      name: "Merchant Bot Admin",
+      desc: "Admin interface for managing a marketing telegram bot for IT meetups.",
+      stack: [
+        { id: 0, name: "HTML", color: "bg-html" },
+        { id: 1, name: "Sass", color: "bg-sass" },
+        { id: 2, name: "TypeScript", color: "bg-typescript" },
+        { id: 3, name: "React", color: "bg-react-blue" },
+        { id: 4, name: "NodeJS", color: "bg-nodejs" },
+        { id: 5, name: "MongoDB", color: "bg-mongodb" },
+        { id: 6, name: "Docker", color: "bg-docker" },
+        { id: 7, name: "Git", color: "bg-black" },
+      ],
+      goal: [
+        "Create an interface for service administrators with the ability to create and edit conference records in the database, mark participant payments and see the current status of the events.",
+      ],
+      solution: [
+        "To implement the project, the Payload CMS framework connected to the MongoDB database was chosen.",
+        "The following features have been introduced:",
+        "- Creating and editing conferences, including the ability to mark payment and participation flags, currency and payment amount for registered participants.",
+        "- Exporting conference participants into PDF, divided into those who paid and those who did not pay yet for participation.",
+        "- Creating and editing mailings to participants of two types - mailing by time and mailing a selectable number of days before the start of the conference.",
+        "- Convenient display of a list of conferences with the parameters necessary for the administrator.",
+        "Challenges overcome:",
+        "- Connecting a fullstack project to the MongoDB production database.",
+        "- Creation of custom components and API handles not provided by the default framework, but allowing us to make the interface more convenient for users.",
+        "- Implementation of a custom RichText text editor that would be normally perceived both in the admin panel and in the Telegram bot.",
+      ],
+      gitUrl: "https://github.com/wizards-of-the-code/conf-admin-payload",
+    },
+    {
+      id: 1,
+      images: [
         "images/projects/itinfo_1.png",
         "images/projects/itinfo_2.png",
         "images/projects/itinfo_3.png",
@@ -160,7 +194,7 @@ export const data = {
       gitUrl: null,
     },
     {
-      id: 1,
+      id: 2,
       images: [
         "images/projects/extension_1.png",
         "images/projects/extension_2.gif",
@@ -189,7 +223,7 @@ export const data = {
       gitUrl: "https://github.com/Lexeor/ntb-extension",
     },
     {
-      id: 2,
+      id: 3,
       images: [
         "images/projects/cadence_1.png",
         "images/projects/cadence_2.gif",
@@ -216,7 +250,7 @@ export const data = {
       gitPagesUrl: "https://lexeor.github.io/cadence-assistant/",
     },
     {
-      id: 3,
+      id: 4,
       images: [
         "images/projects/tanner_1.png",
         "images/projects/tanner_2.gif",
@@ -246,7 +280,7 @@ export const data = {
       serverUrl: "http://62.84.125.174/",
     },
     {
-      id: 4,
+      id: 5,
       images: ["images/projects/cv_1.png", "images/projects/cv_2.png"],
       name: "CV / Portfolio site",
       desc: "Oh yes! This site is also included in the portfolio for obvious reasons :)",
