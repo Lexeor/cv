@@ -145,7 +145,7 @@ export const data = {
         "Create an interface for service administrators with the ability to create and edit conference records in the database, mark participant payments and see the current status of the events.",
       ],
       solution: [
-        "To implement the project, the Payload CMS framework connected to the MongoDB database was chosen.",
+        "To implement the project, the Payload CMS framework connected to the cloud MongoDB database was chosen.",
         "Developed by a team of 2 people.",
         "The following features have been introduced:",
         "- Creating and editing conferences, including the ability to mark payment and participation flags, currency and payment amount for registered participants.",
@@ -156,6 +156,7 @@ export const data = {
         "- Connecting a fullstack project to the MongoDB production database.",
         "- Creation of custom components and API handles not provided by the default framework, but allowing us to make the interface more convenient for users.",
         "- Implementation of a custom RichText text editor that would be normally perceived both in the admin panel and in the Telegram bot.",
+        "The service is deployed on a cloud server using Docker Compose and Nginx.",
       ],
       gitUrl: "https://github.com/wizards-of-the-code/conf-admin-payload",
     },
