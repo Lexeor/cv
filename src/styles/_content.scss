@@ -1,11 +1,11 @@
 .content {
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  padding: 1em 2em;
   gap: 1em;
   color: black;
-  border-right: 4px solid $color-primary;
-  background-color: $color-background;
+  // border-right: 4px solid $color-primary;
+  // background-color: $color-background;
 
   h1,
   h2,
@@ -30,5 +30,6 @@
 @media only screen and (max-width: 805px) {
   .content {
     border: 0;
+    padding: 1em;
   }
 }
