@@ -17,13 +17,28 @@ export const data = {
       { id: 5, name: "React", icon: "fa-brands fa-react", color: "react-blue" },
       {
         id: 6,
-        name: "Redux Toolkit",
-        svg: "redux",
+        name: "Next.js",
+        svg: "nextjs",
       },
-      { id: 7, name: "REST API", svg: "rest-api" },
-      { id: 8, name: "git", svg: "git" },
       {
-        id: 9,
+        id: 7,
+        name: "Remix",
+        svg: "remix",
+      },
+      {
+        id: 6,
+        name: "Ant Design",
+        svg: "ant-design",
+      },
+      {
+        id: 7,
+        name: "Zustand",
+        svg: "zustand",
+      },
+      { id: 8, name: "REST API", svg: "rest-api" },
+      { id: 9, name: "git", svg: "git" },
+      {
+        id: 10,
         name: "Docker",
         svg: "docker",
       },
@@ -33,6 +48,11 @@ export const data = {
         id: 0,
         name: "Node.js",
         svg: "nodejs",
+      },
+      {
+        id: 1,
+        name: "PostgreSQL",
+        svg: "postgresql",
       },
       {
         id: 1,
@@ -100,6 +120,14 @@ export const data = {
   links: [
     {
       id: 0,
+      name: "GitLab",
+      svg: "gitlab",
+      url: "https://gitlab.com/Lexeor",
+      color: "black",
+      str: "Lexeor",
+    },
+    {
+      id: 1,
       name: "GitHub",
       icon: "fa-brands fa-github",
       url: "https://github.com/Lexeor",
@@ -107,7 +135,7 @@ export const data = {
       str: "Lexeor",
     },
     {
-      id: 1,
+      id: 2,
       name: "LinkedIn",
       icon: "fa-brands fa-linkedin",
       url: "https://www.linkedin.com/in/alexander-tarasov-react/",
@@ -115,7 +143,7 @@ export const data = {
       str: "alexander-tarasov-react",
     },
     {
-      id: 2,
+      id: 3,
       name: "LeetCode",
       svg: "leetcode",
       url: "https://leetcode.com/Lexeor/",
